@@ -1,0 +1,25 @@
+{
+  "name": "virtualworkplace",
+  "version": "1.0.0",
+  "description": "Repository for virtual workplace",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VE-Design-Team/VirtualWorkplace.git"
+  },
+  "keywords": [
+    "RMIT"
+  ],
+  "author": "Nicky Callinan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VE-Design-Team/VirtualWorkplace/issues"
+  },
+  "homepage": "https://github.com/VE-Design-Team/VirtualWorkplace#readme"
+}

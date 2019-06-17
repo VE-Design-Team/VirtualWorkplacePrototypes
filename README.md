@@ -7,7 +7,7 @@ This repository contains the environment for the virtual workplace, an education
 Clone, commit and copy public facing code in the /docs folder
 
 ## Run locally and test
-
+Ensure opeing and closing head tags are in your index files
 Open your terminal window in VS Code
 ```
 cd docs
@@ -24,8 +24,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Contributor
-Nicky Callinan
-Jack Dunstan
+* Nicky Callinan
+* Jack Dunstan
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

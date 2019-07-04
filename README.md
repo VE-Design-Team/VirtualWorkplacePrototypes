@@ -26,6 +26,7 @@ Please make sure to update tests as appropriate.
 ## Contributor
 * Nicky Callinan
 * Jack Dunstan
+* Gordon Napier
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

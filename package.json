@@ -7,19 +7,32 @@
     "doc": "docs"
   },
   "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VE-Design-Team/VirtualWorkplace.git"
+    "url": "https://github.com/azemoh/gulp-pug-sass-seed.git"
   },
   "keywords": [
-    "RMIT"
+    "jade",
+    "gulp",
+    "pug",
+    "sass",
+    "browsersync"
   ],
   "author": "Nicky Callinan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/VE-Design-Team/VirtualWorkplace/issues"
   },
-  "homepage": "https://github.com/VE-Design-Team/VirtualWorkplace#readme"
+  "devDependencies": {
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-data": "^1.2.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-sass": "^2.0.4"
+  }
 }

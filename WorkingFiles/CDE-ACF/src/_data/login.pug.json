@@ -1,5 +1,6 @@
 {
-  "title": "Pug-Sass Starter",
-  "welcome": "Gulp Pug Sass Starter",
-  "link": "github.com/azemoh"
+  "title": "Login Page",
+  "patient": "Sarah Smith",
+  "next_link": "http://next",
+  "prev_link": "http://prev"
 }

@@ -1,10 +1,21 @@
-@import "includes/base";
 
-header {
-  h1 {
-    font-weight: 300;
-    text-align: center;
-    font-size: 60px;
-    margin-top: 180px;
-  }
-}
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+//
+// Grid mixins
+//
+
+@import "bootstrap/mixins/breakpoints";
+
+// including variables and mixins
+@import "theme/variables";
+@import "theme/mixins";
+@import "theme/flexbox";
+@import "theme/reset";
+
+// Custom Scss 
+@import "theme/elements";
+@import "theme/header";
+@import "theme/home";
+@import "theme/footer";

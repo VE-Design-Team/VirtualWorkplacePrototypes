@@ -1,3 +1,26 @@
-h1= title
-p= prev_link
-p= next_link
+//h1= title
+//p= prev_link
+//p= next_link
+
+form.form-horizontal
+    fieldset
+        // Form Name
+        legend Form Name
+        // Text input
+        .form-group
+          label.col-md-4.control-label(for='Username') Username
+          |   
+          |   
+          .col-md-5
+            input#Username.form-control.input-md(name='Username', type='text', placeholder='cedric.smith@c4de.com.au', required='')
+            |   
+            span.help-block Enter you username here
+        // Text input
+        .form-group
+          label.col-md-4.control-label(for='password') Username
+          |   
+          |   
+          .col-md-4
+            input#password.form-control.input-md(name='password', type='text', placeholder='Your password')
+            |   
+            span.help-block Enter you password here.

@@ -1,0 +1,65 @@
+//- h3 Patient record - Food and Fluids
+br
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href='#')
+          | Food & Fluid 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='#') Sleeping Chart
+      li.nav-item
+        a.nav-link(href='#') Continence
+      li.nav-item
+        a.nav-link(href='#') ADLS
+br
+h5 Food and Fluids record
+
+table#tablePreview.table.table-striped.table-hover
+  thead
+    tr
+      th Date
+      th Time
+      th Food Item
+      th Amount Taken
+      th Time Taken
+      th Role
+  tbody
+    tr
+      td
+        input.form-control(type='date', placeholder='dd/mm/yyyy')
+      td
+        input.form-control(type='time', placeholder='hh:mm')
+      td
+        input.form-control(type='text', placeholder='Enter Food Item here')
+      td
+        .form-group
+          select#amountTaken.form-control
+      td
+       .form-group
+          select#timeTaken.form-control  
+        
+      td
+        input.form-control(type='text', value='PCA',disabled)    
+    tr
+      td
+        input.form-control(type='date', placeholder='dd/mm/yyyy')
+      td
+        input.form-control(type='time', placeholder='hh:mm')
+      td
+        input.form-control(type='text', placeholder='Enter Food Item here')
+      td
+        .form-group
+          select#amountTaken.form-control
+      td
+        .form-group
+          select#timeTaken.form-control
+        
+      td
+        input.form-control(type='text', value='PCA',disabled) 
+a.btn.btn-primary(href='foodrecord.html')  Back
+a.btn.btn-primary(href='foodrecord.html')  Print PDF
+a.btn.btn-primary(href='foodrecord.html')  Submit Entries

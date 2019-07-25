@@ -1,22 +1,22 @@
 //- h3 Patient record - Food and Fluids
-br
+//br
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light
+//- nav.navbar.navbar-expand-lg.navbar-light.bg-light
   
-  #navbarNav.collapse.navbar-collapse
-    ul.navbar-nav
-      li.nav-item.active
-        a.nav-link(href='#')
-          | Food & Fluid 
-          span.sr-only (current)
-      li.nav-item
-        a.nav-link(href='#') Sleeping Chart
-      li.nav-item
-        a.nav-link(href='#') Continence
-      li.nav-item
-        a.nav-link(href='#') ADLS
-br
-h5 Food and Fluids record
+//-   #navbarNav.collapse.navbar-collapse
+//-     ul.navbar-nav
+//-       li.nav-item.active
+//-         a.nav-link(href='#')
+//-           | Food & Fluid 
+//-           span.sr-only (current)
+//-       li.nav-item
+//-         a.nav-link(href='#') Sleeping Chart
+//-       li.nav-item
+//-         a.nav-link(href='#') Continence
+//-       li.nav-item
+//-         a.nav-link(href='#') ADLS
+//- br
+legend Food and Fluids record
 
 table#tablePreview.table.table-striped.table-hover
   thead
@@ -27,39 +27,25 @@ table#tablePreview.table.table-striped.table-hover
       th Amount Taken
       th Time Taken
       th Role
-  tbody
-    tr
+  tbody#tableToModify
+    tr#rowToClone
       td
-        input.form-control(type='date', placeholder='dd/mm/yyyy')
+        input.form-control.form-control-sm(type='date', placeholder='dd/mm/yyyy')
       td
-        input.form-control(type='time', placeholder='hh:mm')
+        input.form-control.form-control-sm(type='time', placeholder='hh:mm')
       td
-        input.form-control(type='text', placeholder='Enter Food Item here')
+        input.form-control.form-control-sm(type='text', placeholder='Enter Food Item here')
       td
         .form-group
-          select#amountTaken.form-control
+          #amountTaken.form-control.form-control-sm
       td
        .form-group
-          select#timeTaken.form-control  
+          #timeTaken.form-control.form-control-sm
         
       td
-        input.form-control(type='text', value='PCA',disabled)    
-    tr
-      td
-        input.form-control(type='date', placeholder='dd/mm/yyyy')
-      td
-        input.form-control(type='time', placeholder='hh:mm')
-      td
-        input.form-control(type='text', placeholder='Enter Food Item here')
-      td
-        .form-group
-          select#amountTaken.form-control
-      td
-        .form-group
-          select#timeTaken.form-control
+        input.form-control.form-control-sm(type='text', value='PCA',disabled)     
         
-      td
-        input.form-control(type='text', value='PCA',disabled) 
-a.btn.btn-primary(href='foodrecord.html')  Back
-a.btn.btn-primary(href='foodrecord.html')  Print PDF
-a.btn.btn-primary(href='foodrecord.html')  Submit Entries
+a.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Back
+a.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Print PDF
+a.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
+input(type='button', onclick='addRow()', value='Add Row')

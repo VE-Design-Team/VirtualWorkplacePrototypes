@@ -35,6 +35,12 @@
     "gulp-pug": "^3.0.3",
     "gulp-sass": "^2.0.4"
   },
+<<<<<<< HEAD
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+=======
   "homepage": "https://github.com/azemoh/gulp-pug-sass-seed#readme",
   "dependencies": {}
+>>>>>>> master
 }

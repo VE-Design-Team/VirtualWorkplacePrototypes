@@ -6,3 +6,43 @@ form.form-horizontal
     fieldset
         // Form Name
         legend Continence
+a.btn.btn-sm.btn-primary(href='continence.html')  Urinary record
+a.btn.btn-sm.btn-primary(href='#')  Bowel chart
+
+table#tablePreview.table.table-striped.table-hover
+  thead
+    tr
+      th Time
+      th Date
+      th Date
+      th Date
+  tbody
+    tr
+      td
+        //input#continTime.form-control(type='text')
+      td
+        input#continDate.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy')
+        
+      td
+        input#continDate.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy')
+        
+      td
+        input#continDate.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy')
+    .highlight 
+      tr
+      td
+        input#continTime.form-control-sm.form-control(type='text')
+      td
+        input#continTime.form-control-sm.form-control(type='text')
+        input#continTime.form-control-sm.form-control(type='text')
+      td
+        input#continTime.form-control-sm.form-control(type='text')
+        input#continTime.form-control-sm.form-control(type='text')
+      td
+        input#continTime.form-control.form-control-sm(type='text')
+        input#continTime.form-control.form-control-sm(type='text')
+
+
+a.btn.btn-sm.btn-primary(href='foodrecord.html')  Back
+a.btn.btn-sm.btn-primary(href='#')  Print PDF
+a.btn.btn-sm.btn-primary(href='#')  Submit Entries

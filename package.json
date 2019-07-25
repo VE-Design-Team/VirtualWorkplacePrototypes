@@ -34,5 +34,8 @@
     "gulp-data": "^1.2.0",
     "gulp-pug": "^3.0.3",
     "gulp-sass": "^2.0.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }

@@ -1,28 +1,28 @@
-//h1= title
 //p= prev_link
 //p= next_link
-
-form.form-horizontal
-    fieldset
-        // Form Name
-        h4 Scottish Thistle Care Facility
-        // Text input
-        .form-group
-          label.col-md-4.control-label(for='Username') Login with your username
-          |   
-          |   
-          .col-md-5
-            input#Username.form-control.input-md(name='Username', type='text',aria-describedby="emailHelp", placeholder='cedric.smith@c4de.com.au', required='')
-          
-        // Text input
-        .form-group
-          label.col-md-4.control-label(for='password') Password
-          |   
-          |   
-          .col-md-4
-            input#password.form-control.input-md(name='password', type='text',aria-describedby="Password", placeholder='Your password')
-         
-a.btn.btn-primary(href='messageboard.html')  log in
-br
-a(href='') Contact Support
-a(href='') Forgot password
+.row 
+  .col-md-6
+  .col-md-6
+    form.form-horizontal
+        fieldset
+            // Form Name
+            H1 Acme Company
+            h4 Scottish Thistle Care Facility
+            // Text input
+            .form-group
+              label.col-md-12.control-label(for='Username') Login with your username
+              |   
+              |    
+              .col-md-6
+                input#Username.form-control.input-md(name='Username', type='text',aria-describedby="emailHelp", placeholder='cedric.smith@c4de.com.au', required='')
+              
+            // Text input
+            .form-group
+              label.col-md-12.control-label(for='password') Password
+              |   
+              |   
+              .col-md-6
+                input#password.form-control.input-md(name='password', type='text',aria-describedby="Password", placeholder='Your password')
+              a.btn.btn-primary(href='messageboard.html')  log in
+              br
+              a(href='') Forgot password

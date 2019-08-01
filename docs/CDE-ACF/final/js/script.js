@@ -1,42 +1,42 @@
-let timeTaken = document.getElementById("timeTaken")
-let amountTaken = document.getElementById("amountTaken")
+// let timeTaken = document.getElementById("timeTaken")
+// let amountTaken = document.getElementById("amountTaken")
 
-//Create array of options to be added
-const time = ['00:00','00:15','00:30',
-              '00:45','01:00','01:15',
-              '01:30','01:45','02:00']
+// //Create array of options to be added
+// const time = ['00:00','00:15','00:30',
+//               '00:45','01:00','01:15',
+//               '01:30','01:45','02:00']
 
-const amount = ['None','Quarter','Half',
-               'Three quarter','Full','A bite']      
+// const amount = ['None','Quarter','Half',
+//                'Three quarter','Full','A bite']      
 
- //Create and append select list for time
-let selectList = document.createElement("select")
-selectList.setAttribute("id", "mySelect")
-timeTaken.appendChild(selectList)
+//  //Create and append select list for time
+// let selectList = document.createElement("select")
+// selectList.setAttribute("id", "mySelect")
+// timeTaken.appendChild(selectList)
 
-//Create and append select list for the amountTaken
-let newSelectList = document.createElement("select")
-newSelectList.setAttribute("id", "mySelect")
-amountTaken.appendChild(newSelectList)
+// //Create and append select list for the amountTaken
+// let newSelectList = document.createElement("select")
+// newSelectList.setAttribute("id", "mySelect")
+// amountTaken.appendChild(newSelectList)
 
-//Create and append the time options
-for (let i = 0; i < time.length; i++) {
-    let option = document.createElement("option")
-    option.setAttribute("value", time[i])
-    option.text = time[i]
-    selectList.appendChild(option)
-}
+// //Create and append the time options
+// for (let i = 0; i < time.length; i++) {
+//     let option = document.createElement("option")
+//     option.setAttribute("value", time[i])
+//     option.text = time[i]
+//     selectList.appendChild(option)
+// }
 
-//Create and append the amountTaken options
-for (let i = 0; i < amount.length; i++) {
-    let option = document.createElement("option")
-    option.setAttribute("value", amount[i])
-    option.text = amount[i]
-    newSelectList.appendChild(option)
-}
+// //Create and append the amountTaken options
+// for (let i = 0; i < amount.length; i++) {
+//     let option = document.createElement("option")
+//     option.setAttribute("value", amount[i])
+//     option.text = amount[i]
+//     newSelectList.appendChild(option)
+// }
 //function to add rows to table in foodrecordPage
 let count=1
-function addRow() {
+const addRow = () => {
     count++
     if(count<=10){
     let row = document.getElementById("rowToClone") // find row to replicate
@@ -44,14 +44,16 @@ function addRow() {
     let clone = row.cloneNode(true); // copy children 
     // clone.id = "newID"; // change id or other attributes/contents
     // table.appendChild(clone); // add new row to end of tabl
-    let InputType = clone.getElementsByTagName("input")
+    let InputType = clone.getElementsByClassName("foodrecord")
 
     for (let i=0; i<InputType.length; i++){
-    //  if( InputType[i].type=='checkbox'){
-    //     InputType[i].checked = false;  
-    // }else{
+     if( InputType[i].name=='role'||InputType[i].type=='checkbox'){
+        InputType[i].checked = false; 
+         //&&InputType[i].value!=' '
+       // InputType[i].checked = false;  
+    }else{
        InputType[i].value=''           
-       // }
+       }
     }
     table.appendChild(clone)
 }
@@ -84,3 +86,39 @@ else {
 //     option.text = highlightOption[i]
 //     selectHighlight.appendChild(option)
 // }
+
+// var expanded = false;
+
+// function showCheckboxes() {
+//   var checkboxes = document.getElementById("checkboxes");
+//   if (!expanded) {
+//     checkboxes.style.display = "block";
+//     expanded = true;
+//   } else {
+//     checkboxes.style.display = "none";
+//     expanded = false;
+//   }
+// }
+
+var options = [];
+
+$( '.dropdown-menu a' ).on( 'click', function( event ) {
+
+   var $target = $( event.currentTarget ),
+       val = $target.attr( 'data-value' ),
+       $inp = $target.find( 'input' ),
+       idx;
+
+   if ( ( idx = options.indexOf( val ) ) > -1 ) {
+      options.splice( idx, 1 );
+      setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
+   } else {
+      options.push( val );
+      setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
+   }
+
+   $( event.target ).blur();
+      
+   console.log( options );
+   return false;
+});

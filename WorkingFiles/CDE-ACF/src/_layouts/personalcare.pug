@@ -15,29 +15,19 @@ legend Personal Care
       td
         input.foodrecord.form-control.form-control-sm(type='time', placeholder='hh:mm')
       td
-        .container
-            .row
-                .col-lg-12
-                    .button-group
-                      button.btn.btn-default.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown')
-                        span.glyphicon.glyphicon-cog
-                        span.caret
-                      ul.dropdown-menu
-                        li
-                          a.small(href='#', data-value='option1', tabindex='-1')
-                            input.foodrecord(type='checkbox')
-                            |  Option 1
-                        li
-                          a.small(href='#', data-value='option2', tabindex='-1')
-                            input.foodrecord(type='checkbox')
-                            |  Option 2
-                        li
-                          a.small(href='#', data-value='option3', tabindex='-1')
-                            input.foodrecord(type='checkbox')
-                            |  Option 3
-          
+        select.selectpicker.foodrecord(multiple='', data-live-search='true',name='option')
+            option(value='Shower') Shower
+            option(value='Wash') Wash
+            option(value='Hair washed') Hair Washed
+            option(value='Oral care') Oral care
+            option(value='Shave') Shave 
+            option(value='Fingemails') Fingemails
+            option(value='Toenails') Toenails 
+            option(value='Trolley bath') Trolley bath
+            option(value='Application of moisturizer') Application of moisturizer
+        
       td
-        textarea#comment(name='story',rows="3",cols='33')
+        textarea.foodrecord(name='story',rows="3",cols='33')
         
       td
         input.foodrecord.form-control.form-control-sm(type='text',name='role' value='PCA')     
@@ -48,3 +38,5 @@ a.btn.btn.btn-sm.btn-primary(onclick='pdf()')  Print PDF
 //a#submit.btn.btn.btn-sm.btn-primary Submit Entries
 input(type='button', onclick='tableToJson()', value='Submit Entries')
 input(type='button', onclick='addRow()', value='Add Row')
+
+

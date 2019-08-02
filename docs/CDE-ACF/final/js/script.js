@@ -1,6 +1,6 @@
 // let timeTaken = document.getElementById("timeTaken")
 // let amountTaken = document.getElementById("amountTaken")
-
+//$('select').selectpicker();
 // //Create array of options to be added
 // const time = ['00:00','00:15','00:30',
 //               '00:45','01:00','01:15',
@@ -34,6 +34,23 @@
 //     option.text = amount[i]
 //     newSelectList.appendChild(option)
 // }
+
+//login form validation
+const login = () => {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+ 
+    if(username === '' || password==='') 
+    alert("Login credentials cannot be Empty!")
+    else if(username === 'PCAstudent' && password==='C4DE_learn')
+    {
+       window.location.href = 'messageboard.html';
+    }
+    else {
+       alert("Incorrect username or password! ")
+    }
+}
+
 //function to add rows to table in foodrecordPage
 let count=1
 const addRow = () => {
@@ -47,10 +64,10 @@ const addRow = () => {
     let InputType = clone.getElementsByClassName("foodrecord")
 
     for (let i=0; i<InputType.length; i++){
-     if( InputType[i].name=='role'||InputType[i].type=='checkbox'){
-        InputType[i].checked = false; 
-         //&&InputType[i].value!=' '
-       // InputType[i].checked = false;  
+     if( InputType[i].name=='role'){
+        // InputType[i].type=='checkbox'
+        //  InputType[i].checked = false; 
+         //&&InputType[i].value!=' ' 
     }else{
        InputType[i].value=''           
        }
@@ -60,65 +77,7 @@ const addRow = () => {
 else {
     alert("Row limit exceeded")
 }
+
   }
 
-// const contTime = [  '00:00','01:00','02:00','03:00','04:00',
-//                     '05:00','06:00','07:00','08:00','09:00',
-//                     '10:00','11:00','12:00','13:00','14:00',
-//                     '15:00','16:00','17:00','18:00','19:00',
-//                     '20:00','21:00','22:00','23:00' ]
 
-// for (let i = 0; i < contTime.length; i++) {
-//  var timeVal = document.getElementById("continTime")
-//  //var playerscore = document.getElementById('player' + (i + 1) + "score")
-
-//  timeVal.innerText = contTime[i]
-
-// }
-
-// const highlightOption = ['1','2','3','4','4b','c']
-// let high = document.getElementsByClassName("highlight")
-// timeTaken.appendChild(selectList) //
-// let selectHighlight = document.createElement("select")
-// for (let i = 0; i < highlightOption.length; i++) {
-//     let option = document.createElement("option")
-//     option.setAttribute("value", highlightOption[i])
-//     option.text = highlightOption[i]
-//     selectHighlight.appendChild(option)
-// }
-
-// var expanded = false;
-
-// function showCheckboxes() {
-//   var checkboxes = document.getElementById("checkboxes");
-//   if (!expanded) {
-//     checkboxes.style.display = "block";
-//     expanded = true;
-//   } else {
-//     checkboxes.style.display = "none";
-//     expanded = false;
-//   }
-// }
-
-var options = [];
-
-$( '.dropdown-menu a' ).on( 'click', function( event ) {
-
-   var $target = $( event.currentTarget ),
-       val = $target.attr( 'data-value' ),
-       $inp = $target.find( 'input' ),
-       idx;
-
-   if ( ( idx = options.indexOf( val ) ) > -1 ) {
-      options.splice( idx, 1 );
-      setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
-   } else {
-      options.push( val );
-      setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
-   }
-
-   $( event.target ).blur();
-      
-   console.log( options );
-   return false;
-});

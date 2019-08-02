@@ -68,7 +68,7 @@ function tableToJson() {
        const _value = myTab[ i ].value,
            _innerText = myTab[ i ].innerText;
        if ( _value ) {
-           //console.log( _value );
+           console.log( _value );
            tableData.push( _value )
            //newTable.push(tableData)
        } else if ( _innerText ) {
@@ -80,7 +80,7 @@ function tableToJson() {
       
    }
    
-   console.log( tableData );
+   //console.log( tableData );
    // tableData = []
   
 }

@@ -50,7 +50,9 @@ const login = () => {
        alert("Incorrect username or password! ")
     }
 }
-
+const loginInfo = () => {
+    alert("Your Username is: 'PCAstudent' \nPassword is:'C4DE_learn' ")
+}
 //function to add rows to table in foodrecordPage
 let count=1
 const addRow = () => {

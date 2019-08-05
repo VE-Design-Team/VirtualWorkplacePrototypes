@@ -5,11 +5,11 @@ h3 Messageboard
 //-     input#example-datetime-local-input.form-control(type='datetime-local', value='2011-08-19T13:45:00')
 form.form-inline
   label(for='inlineFormInput') From date: 
-   input#inlineFormInput.form-control.mb-2.mr-sm-2.mb-sm-0(type='date')
+   input#inlineFormInput.form-control.mb-2.mr-sm-2.mb-sm-0(type='text')
   label(for='inlineFormInputGroup') To date:
   .input-group.mb-2.mr-sm-2.mb-sm-0
     .input-group-addon 
-    input#inlineFormInputGroup.form-control(type='date')
+    input#inlineFormInputGroup.form-control(type='text')
     button.btn.btn-primary(type='submit') Submit
   input#inlineRadio1.form-check-input(type='radio', name='inlineRadioOptions', value='option1')
   |  All
@@ -19,8 +19,8 @@ form.form-inline
   |  Individuals
   input#inlineCheckbox1.form-check-input(type='checkbox', value='option1')
   |  Unread only 
-a.btn.btn-primary(href='#') New
-a.btn.btn-primary(href='#') Mark all as read
+//- a.btn.btn-primary(href='#') New
+//- a.btn.btn-primary(href='#') Mark all as read
 br
 br
 // Table
@@ -37,42 +37,50 @@ table#tablePreview.table.table-striped.table-hover
   // Table head
   // Table body
   tbody
-    tr.accordion-toggle(data-toggle='collapse', data-target='#demo1')
+    tr.accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo1',onclick='messageOne()')
+    
       
       td.custom-control.custom-checkbox
         input#customCheck1.custom-control-input(type='checkbox')
         label.custom-control-label(for='customCheck1') 
-      td John
-      td @mdo
-      td 2 Jul 2019
-      td 16:14:20
+      td Admin
+      td Message#1
+      td#inbox1 
+      td#time1
     tr
       td.hiddenRow(colspan='6')
-        #demo1.accordian-body.collapse  Demo Message
-    tr.accordion-toggle(data-toggle='collapse', data-target='#demo2')
+        #demo1.accordian-body.collapse  Mr.Huang has complained people have stolen his 
+          |property but he has dementia and we can’t find any evidence of this 
+          |has actually happened. Please make sure you only enter his room with two 
+          |people so there is a witness to all activity.
+    tr.accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo2',onclick='messageTwo()')
     
       td.custom-control.custom-checkbox
         input#customCheck2.custom-control-input(type='checkbox')
         label.custom-control-label(for='customCheck2') 
-      td Sam
-      td @fat
-      td 2 Jul 2019
-      td 16:14:20
+      td Admin
+      td Message#2
+      td#inbox2
+      td#time2 
     tr
       td.hiddenRow(colspan='6')
-        #demo2.accordian-body.collapse  Demo Message
-     
-    tr
+        #demo2.accordian-body.collapse  Dear Valued staff member, 
+          |
+          br
+          |There is a compulsory meeting today in the staff room at 14:00.
+          | All staff are required to attend.
+          
+ 
+    //- tr
     
-      td.custom-control.custom-checkbox
-        input#customCheck3.custom-control-input(type='checkbox')
-        label.custom-control-label(for='customCheck3')  
-      td Bird
-      td @twitter
-      td 2 Jul 2019
-      td 16:14:20
+    //-   td.custom-control.custom-checkbox
+    //-     input#customCheck3.custom-control-input(type='checkbox')
+    //-     label.custom-control-label(for='customCheck3')  
+    //-   td Bird
+    //-   td @twitter
+    //-   td 2 Jul 2019
+    //-   td 16:14:20
       
-  // Table body
-// Table
 
-a.btn.btn-primary(href='foodrecord.html')  Add New
+a.btn.btn-primary(onclick='route()')  Proceed
+//a.btn.btn-primary(href='foodrecord.html')  Add New

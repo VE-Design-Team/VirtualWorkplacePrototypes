@@ -36,6 +36,7 @@
     "gulp-sass": "^2.0.4"
   },
   "dependencies": {
+    "html2canvas": "^1.0.0-rc.3",
     "lodash": "^4.17.15"
   }
 }

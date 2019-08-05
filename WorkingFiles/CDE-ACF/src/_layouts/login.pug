@@ -21,7 +21,7 @@
                 |   
                 |    
                 .col-12
-                  input#Username.form-control.input-md(name='Username', type='text',aria-describedby="emailHelp", placeholder='cedric.smith@c4de.com.au', required='')
+                  input#username.form-control.input-md(name='Username', type='text',aria-describedby="emailHelp", placeholder='Enter your username', required='',autocomplete='off')
                 
               // Text input
               .form-group
@@ -29,8 +29,8 @@
                 |   
                 |   
                 .col-12
-                  input#password.form-control.input-md(name='password', type='text',aria-describedby="Password", placeholder='Your password')
-                a.btn.w-100.btn-primary(href='messageboard.html')  log in
+                  input#password.form-control.input-md(name='password', type='password',aria-describedby="Password", placeholder='Enter your password',autocomplete='off')
+                a.btn.w-100.btn-primary(onclick='login()')  log in
                 br
                 .col-12.text-center
-                  a(href='') Forgot password
+                  a(onclick='loginInfo()') Forgot password

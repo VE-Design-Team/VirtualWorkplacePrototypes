@@ -35,6 +35,12 @@
 //     newSelectList.appendChild(option)
 // }
 
+window.onload = function() {
+    if (window.location.href.indexOf('messageboard.html') > -1) {
+      currentDateAndTime();
+    }
+  }
+
 //login form validation
 const login = () => {
     const username = document.getElementById('username').value;
@@ -56,6 +62,7 @@ const loginInfo = () => {
 }
 
 //Print current date on messageBoard
+currentDateAndTime = () => {
 let today = new Date();
 let dd = today.getDate();
 let mm = today.getMonth() + 1; //January is 0!
@@ -98,6 +105,7 @@ document.getElementById('inbox2').innerHTML = todayDate;
     }
     startTime();
 })();
+}
 
 messageOne = () => document.getElementById("customCheck1").checked = true;
 

@@ -85,4 +85,35 @@ function tableToJson() {
 
 }
 
+// tableDat = []
+// function cont() {
+//     const myTable = document.getElementsByClassName('contrecord'),
+//         //tableData = []
+//         _length_ = myTable.length;
 
+//     for (let i = 0; i < _length_; i++) {
+//         const _value_ = myTable[i].value,
+//             _innerText_ = myTable[i].innerText;
+//         if (_value_) {
+//             console.log(_value_);
+//             tableDat.push(_value_)
+//             //newTable.push(tableData)
+//         } else if (_innerText_) {
+//             //console.log( _innerText );
+//             tableDat.push(_innerText_)
+
+//             //newTable.push(tableData)
+//         }
+//         //console.log(tableDat)
+//     }
+//     //console.log(tableDat)
+//     slicearr()
+// }
+// temparray = []
+// slicearr = () => {
+// var i,chunk = 4;
+// for (i=0; i<4; i+=chunk) {
+//     temparray = tableDat.slice(i,i+chunk);
+// }
+// console.log("temprray" + " "+temparray)
+// }

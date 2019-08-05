@@ -4,7 +4,7 @@ window.onload = function() {
     }
   }
   
-//function to add rows to table in foodrecordPage
+//function to add rows to table in PersonalCarePage
 
 let flag = 1
 let rowId = 0;
@@ -17,7 +17,7 @@ const addRows = () => {
         let clone = row.cloneNode(true); // copy children 
         // clone.id = "newID"; // change id or other attributes/contents
         // table.appendChild(clone); // add new row to end of tabl
-        let InputType = clone.getElementsByClassName("foodrecord")
+        let InputType = clone.getElementsByClassName("personalcare")
         rowId++;
         let appendData = `<tr id="rowToClone_`+rowId+`">
           <td><input class="foodrecord form-control form-control-sm" type="date" placeholder="yyyy/mm/dd" min="1990-01-01" max="2040-12-31" /></td>

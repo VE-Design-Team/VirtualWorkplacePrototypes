@@ -5,9 +5,9 @@
 form.form-horizontal
     fieldset
         // Form Name
-        legend Continence
-a.btn.btn-sm.btn-primary(href='continence.html')  Urinary record
-a.btn.btn-sm.btn-primary(href='#')  Bowel chart
+        legend Urinary Continence
+//a.btn.btn-sm.btn-primary(href='continence.html')  Urinary record
+//- /a.btn.btn-sm.btn-primary(href='#')  Bowel chart
 
 table#tablePreview.table.table-striped.table-hover
   thead
@@ -16,36 +16,841 @@ table#tablePreview.table.table-striped.table-hover
       th Date
       th Date
       th Date
-  tbody
+  tbody#tableToModify
     tr
       td
-        //input#continTime.form-control(type='text')
+        input#continTime.contrecord.form-control(type='text' value=" " disabled)
       td
-        input#continDate.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
+        input#continDate.contrecord.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
         ,min="1990-01-01", max="2040-12-31")
         
       td
-        input#continDate.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
+        input#continDate.contrecord.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
         ,min="1990-01-01", max="2040-12-31")
         
       td
-        input#continDate.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
+        input#continDate.contrecord.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
         ,min="1990-01-01", max="2040-12-31")
     .highlight 
+      tr#rowToClone
+      td
+        input#continTime.contrecord.form-control-sm.form-control(type='text',value="00:00")
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
       tr
       td
-        input#continTime.form-control-sm.form-control(type='text')
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="01:00")
+        
       td
-        input#continTime.form-control-sm.form-control(type='text')
-        input#continTime.form-control-sm.form-control(type='text')
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
       td
-        input#continTime.form-control-sm.form-control(type='text')
-        input#continTime.form-control-sm.form-control(type='text')
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
       td
-        input#continTime.form-control.form-control-sm(type='text')
-        input#continTime.form-control.form-control-sm(type='text')
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.form-control.contrecord.form-control-sm(type='text',value="02:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.form-control.contrecord.form-control-sm(type='text',value="03:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.form-control.contrecord.form-control-sm(type='text',value="04:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="05:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="06:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="07:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="08:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="09:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="10:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="11:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="12:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="13:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="14:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="15:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="16:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="17:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="18:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="19:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="20:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="21:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="22:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      tr
+      td
+        input#continTime.contrecord.form-control.form-control-sm(type='text',value="23:00")
+        
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
+      td
+        select.continOption.contrecord.form-control-sm
+            option(disabled='',selected='', value='')  -- select an option -- 
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='4b') 4b
+            option(value='c') c
+        textarea.contrecord(name='story',rows=1,cols='16')
 
 
-a.btn.btn-sm.btn-primary(href='foodrecord.html')  Back
-a.btn.btn-sm.btn-primary(href='#')  Print PDF
-a.btn.btn-sm.btn-primary(href='#')  Submit Entries
+a.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
+a.btn.btn-sm.btn-primary(onclick='print()')  Print PDF
+//-a.btn.btn-sm.btn-primary(onclick='cont()')  Submit Entries
+//- input(type='button', onclick='tableToJson()', value='Submit Entries')
+input(type='button', onclick='addMoreRow()', value='Add Row')

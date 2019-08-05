@@ -114,7 +114,7 @@ messageTwo = () => document.getElementById("customCheck2").checked = true;
 //function to navigate to record page if both messages are read
 route = () => {
     if (document.getElementById("customCheck1").checked && document.getElementById("customCheck2").checked)
-        window.location.href = 'foodrecord.html';
+        window.location.href = 'patientrecord.html';
     else
         alert("Read all message to proceed")
 }

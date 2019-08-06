@@ -3,10 +3,9 @@
 .row.h-100.p-0.m-0 
   .p-0.col-md-6.banner-area
   .p-0.col-sm-6.col-md-4.col-lg-3.mx-auto
-    .row.pt-5
-      .col-3
-        p.float-right
-          | logo
+    .row.pt-5.pl-0
+      .col-3.p-0
+        img(src='img/logo.png')
       .col-9
         H1 Acme Company
       h4.mx-auto Scottish Thistle Care Facility
@@ -17,18 +16,18 @@
               
               // Text input
               .form-group
-                label.col-12.control-label(for='Username') Login with your username
+                label.col-12.p-0.control-label(for='Username') Login with your username
                 |   
                 |    
-                .col-12
+                .col-12.p-0
                   input#username.form-control.input-md(name='Username', type='text',aria-describedby="emailHelp", placeholder='Enter your username', required='',autocomplete='off')
                 
               // Text input
               .form-group
-                label.col-12.control-label(for='password') Password
+                label.col-12.p-0.control-label(for='password') Password
                 |   
                 |   
-                .col-12
+                .col-12.p-0
                   input#password.form-control.input-md(name='password', type='password',aria-describedby="Password", placeholder='Enter your password',autocomplete='off')
                 a.btn.w-100.btn-primary(onclick='login()')  log in
                 br

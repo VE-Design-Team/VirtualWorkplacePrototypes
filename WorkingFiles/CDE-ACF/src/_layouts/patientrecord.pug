@@ -1,23 +1,12 @@
-legend Patient Record
+.content.position-relative
+  .push.mt-5
+  .container.p-5.mb-5.page.rounded-lg
+    .row
+      h3.pb-4 Patient record
 
-#accordion
-  .card
-    #headingOne.card-header
-      h5.mb-0
-        a.btn.btn-link(href='foodrecord.html', aria-expanded='true', aria-controls='collapseOne')
-          | Food & Fluids
-  .card
-    #headingTwo.card-header
-      h5.mb-0
-        a.btn.btn-link.collapsed(href='continence.html', aria-expanded='false', aria-controls='collapseTwo')
-          | Continence
-  .card
-    #headingThree.card-header
-      h5.mb-0
-        a.btn.btn-link.collapsed(href='personalcare.html', aria-expanded='false', aria-controls='collapseThree')
-          | Personal Care
-  .card
-    #headingThree.card-header
-      h5.mb-0
-        a.btn.btn-link.collapsed(href='abbeyscale.html', aria-expanded='false', aria-controls='collapseThree')
-          | Abbey Scale
+    .btn-group-vertical.w-100.p-0.bg-white.shadow.rounded
+      a.btn.btn-outline-secondary.border-light.text-left.p-4(href='foodrecord.html')  Food & Fluids
+      a.btn.btn-outline-secondary.border-light.text-left.p-4(href='continence.html')  Continence
+      a.btn.btn-outline-secondary.border-light.text-left.p-4(href='personalcare.html')  Personal Care
+      a.btn.btn-outline-secondary.border-light.text-left.p-4(href='abbeyscale.html')  Abbey Scale
+    .push

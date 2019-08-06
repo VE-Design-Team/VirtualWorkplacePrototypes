@@ -1,70 +1,55 @@
-//- h3 Patient record - Food and Fluids
-//br
-
-//- nav.navbar.navbar-expand-lg.navbar-light.bg-light
-  
-//-   #navbarNav.collapse.navbar-collapse
-//-     ul.navbar-nav
-//-       li.nav-item.active
-//-         a.nav-link(href='#')
-//-           | Food & Fluid 
-//-           span.sr-only (current)
-//-       li.nav-item
-//-         a.nav-link(href='#') Sleeping Chart
-//-       li.nav-item
-//-         a.nav-link(href='#') Continence
-//-       li.nav-item
-//-         a.nav-link(href='#') ADLS
-//- br
-legend Food and Fluids record
-#reset
- table#tablePreview.table.table-striped.table-hover
-  thead
-    tr
-      th Date
-      th Time
-      th Food Item
-      th Amount Taken
-      th Time Taken
-      th Role
-  tbody#tableToModify
-    tr#rowToClone
-      td
-        input.foodrecord.form-control.form-control-sm(type='date', placeholder='yyyy/mm/dd',min="1990-01-01", max="2040-12-31")
-      td
-        input.foodrecord.form-control.form-control-sm(type='time', placeholder='hh:mm')
-      td
-        input.foodrecord.form-control.form-control-sm(type='text', placeholder='Enter Food Item here')
-      td
-        select#amountTaken.foodrecord.form-control-sm
-            option(disabled='',selected='', value='')  -- select an option -- 
-            option(value='None') None
-            option(value='Quarter') Quarter
-            option(value='Half') Half
-            option(value='Three quarter') Three quarter
-            option(value='Full') Full
-        //-   #amountTaken.foodrecord.form-control-sm
-      td
-        select#timeTaken.foodrecord.form-control-sm
-            option(disabled='',selected='', value='')  -- select an option -- 
-            option(value='00:00') 00:00
-            option(value='00:15') 00:15
-            option(value='00:30') 00:30
-            option(value='00:45') 00:45
-            option(value='01:00') 01:00
-            option(value='01:15') 01:15
-            option(value='01:30') 01:30
-            option(value='01:45') 01:45
-            option(value='02:00') 02:00
-       
-        //-  #timeTaken.foodrecord.form-control-sm
-        
-      td
-        input.foodrecord.form-control.form-control-sm(type='text',name='role' value='PCA')     
-        
-a.btn.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
-a.btn.btn.btn-sm.btn-primary(onclick='pdf()')  Print PDF
-//a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
-//a#submit.btn.btn.btn-sm.btn-primary Submit Entries
-//input(type='button', onclick='tableToJson()', value='Submit Entries')
-input(type='button', onclick='addRow()', value='Add Row')
+.content.position-relative
+  .push.mt-5
+  .container.p-5.mb-5.page.rounded-lg
+    legend Food and Fluids record 
+    #reset
+     table#tablePreview.table.table-striped.table-hover
+      thead
+        tr
+          th Date
+          th Time
+          th Food Item
+          th Amount Taken
+          th Time Taken
+          th Role
+      tbody#tableToModify
+        tr#rowToClone
+          td
+            input.foodrecord.form-control.form-control-sm(type='date', placeholder='yyyy/mm/dd',min="1990-01-01", max="2040-12-31")
+          td
+            input.foodrecord.form-control.form-control-sm(type='time', placeholder='hh:mm')
+          td
+            input.foodrecord.form-control.form-control-sm(type='text', placeholder='Enter Food Item here')
+          td
+            select#amountTaken.foodrecord.form-control-sm
+                option(disabled='',selected='', value='')  -- select an option -- 
+                option(value='None') None
+                option(value='Quarter') Quarter
+                option(value='Half') Half
+                option(value='Three quarter') Three quarter
+                option(value='Full') Full
+            //-   #amountTaken.foodrecord.form-control-sm
+          td
+            select#timeTaken.foodrecord.form-control-sm
+                option(disabled='',selected='', value='')  -- select an option -- 
+                option(value='00:00') 00:00
+                option(value='00:15') 00:15
+                option(value='00:30') 00:30
+                option(value='00:45') 00:45
+                option(value='01:00') 01:00
+                option(value='01:15') 01:15
+                option(value='01:30') 01:30
+                option(value='01:45') 01:45
+                option(value='02:00') 02:00
+           
+            //-  #timeTaken.foodrecord.form-control-sm
+            
+          td
+            input.foodrecord.form-control.form-control-sm(type='text',name='role' value='PCA')     
+            
+    a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
+    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdf()')  Print PDF
+    //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
+    //a#submit.btn.btn.btn-sm.btn-primary Submit Entries
+    //input(type='button', onclick='tableToJson()', value='Submit Entries')
+    input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRow()', value='Add Row')

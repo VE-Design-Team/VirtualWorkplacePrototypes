@@ -1,0 +1,43 @@
+legend Pain Abbey Scale
+#reset
+ table#tablePreview.table.table-striped.table-hover
+  thead
+    tr
+      th Date
+      th Time
+      th xxxx
+      th textArea
+      th dropDown
+      th multiselect
+      th Role
+  tbody#tableToModify
+    tr#rowToClone
+      td
+        input.personalcare.form-control.form-control-sm(type='date', placeholder='yyyy/mm/dd',min="1990-01-01", max="2040-12-31")
+      td
+        input.personalcare.form-control.form-control-sm(type='time', placeholder='hh:mm')
+      td
+        select.testselect2.personalcare.SlectBox(multiple='multiple', data-live-search='true',name='test[]')
+            option(value='Shower') Shower
+            option(value='Wash') Wash
+            option(value='Hair washed') Hair Washed
+            option(value='Oral care') Oral care
+            option(value='Shave') Shave 
+            option(value='Fingemails') Fingemails
+            option(value='Toenails') Toenails 
+            option(value='Trolley bath') Trolley bath
+            option(value='Application of moisturizer') Application of moisturizer
+        
+      td
+        textarea.personalcare(name='story',rows="3",cols='33')
+        
+      td
+        input.personalcare.form-control.form-control-sm(type='text',name='role' value='PCA')     
+        
+a.btn.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
+a.btn.btn.btn-sm.btn-primary(onclick='pdfPC()')  Print PDF
+//a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
+//- input(type='button', onclick='tableToJson()', value='Submit Entries')
+input(type='button', onclick='addRows()', value='Add Row')
+
+

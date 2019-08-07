@@ -12,36 +12,36 @@
       </fieldset>
     </form>
     <!--a.btn.btn-sm.btn-primary(href='continence.html')  Urinary record-->
-    <table class="table table-striped table-hover" id="tablePreview">
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>Date</th>
-          <th>Date</th>
-          <th>Date</th>
+    <table class="table table-striped table-hover" role="table" id="tablePreview">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th role="columnheader">Time</th>
+          <th role="columnheader">Date</th>
+          <th role="columnheader">Date</th>
+          <th role="columnheader">Date</th>
         </tr>
       </thead>
-      <tbody id="tableToModify">
-        <tr>
-          <td>
+      <tbody class="continence" role="rowgroup" id="tableToModify">
+        <tr role="row">
+          <td role="cell">
             <input class="contrecord form-control" id="continTime" type="text" value=" " disabled="disabled"/>
           </td>
-          <td>
+          <td role="cell">
             <input class="contrecord form-control-sm form-control" id="continDate" type="date" placeholder="dd/mm/yyyy" min="1990-01-01" max="2040-12-31"/>
           </td>
-          <td>
+          <td role="cell">
             <input class="contrecord form-control-sm form-control" id="continDate" type="date" placeholder="dd/mm/yyyy" min="1990-01-01" max="2040-12-31"/>
           </td>
-          <td>
+          <td role="cell">
             <input class="contrecord form-control-sm form-control" id="continDate" type="date" placeholder="dd/mm/yyyy" min="1990-01-01" max="2040-12-31"/>
           </td>
         </tr>
         <div class="highlight"> 
-          <tr id="rowToClone"></tr>
-          <td>
+          <tr role="row" id="rowToClone"></tr>
+          <td role="cell">
             <input class="contrecord form-control-sm form-control" id="continTime" type="text" value="00:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -53,7 +53,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -65,7 +65,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -77,11 +77,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="01:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -93,7 +93,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -105,7 +105,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -117,11 +117,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="form-control contrecord form-control-sm" id="continTime" type="text" value="02:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -133,7 +133,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -145,7 +145,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -157,11 +157,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="form-control contrecord form-control-sm" id="continTime" type="text" value="03:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -173,7 +173,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -185,7 +185,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -197,11 +197,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="form-control contrecord form-control-sm" id="continTime" type="text" value="04:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -213,7 +213,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -225,7 +225,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -237,11 +237,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="05:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -253,7 +253,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -265,7 +265,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -277,11 +277,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="06:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -293,7 +293,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -305,7 +305,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -317,11 +317,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="07:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -333,7 +333,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -345,7 +345,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -357,11 +357,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="08:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -373,7 +373,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -385,7 +385,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -397,11 +397,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="09:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -413,7 +413,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -425,7 +425,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -437,11 +437,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="10:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -453,7 +453,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -465,7 +465,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -477,11 +477,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="11:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -493,7 +493,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -505,7 +505,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -517,11 +517,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="12:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -533,7 +533,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -545,7 +545,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -557,11 +557,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="13:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -573,7 +573,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -585,7 +585,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -597,11 +597,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="14:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -613,7 +613,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -625,7 +625,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -637,11 +637,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="15:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -653,7 +653,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -665,7 +665,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -677,11 +677,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="16:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -693,7 +693,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -705,7 +705,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -717,11 +717,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="17:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -733,7 +733,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -745,7 +745,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -757,11 +757,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="18:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -773,7 +773,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -785,7 +785,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -797,11 +797,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="19:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -813,7 +813,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -825,7 +825,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -837,11 +837,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="20:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -853,7 +853,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -865,7 +865,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -877,11 +877,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="21:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -893,7 +893,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -905,7 +905,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -917,11 +917,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="22:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -933,7 +933,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -945,7 +945,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -957,11 +957,11 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <tr></tr>
-          <td>
+          <tr role="row"></tr>
+          <td role="cell">
             <input class="contrecord form-control form-control-sm" id="continTime" type="text" value="23:00"/>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -973,7 +973,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>
@@ -985,7 +985,7 @@
             </select>
             <textarea class="contrecord" name="story" rows="1" cols="16"></textarea>
           </td>
-          <td>
+          <td role="cell">
             <select class="continOption contrecord form-control-sm">
               <option disabled="" selected="" value=""> -- select an option -- </option>
               <option value="1">1</option>

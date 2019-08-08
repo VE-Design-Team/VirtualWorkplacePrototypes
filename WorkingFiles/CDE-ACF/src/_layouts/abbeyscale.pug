@@ -3,42 +3,54 @@
   .container.p-5.mb-5.page.rounded-lg
     legend Pain Abbey Scale
     #reset
-     table#tablePreview.table.table-striped.table-hover 
+     table#tablePreviewAbbey.table.table-striped.table-hover 
       thead
         tr
           th Date
           th Time
+          th x
+          th xx
+          th xxx
           th xxxx
-          th textArea
-          th dropDown
-          th multiselect
+          th xxxxx
           th Role
-      tbody#tableToModify
-        tr#rowToClone
+      tbody#tableToModify2
+        tr#rowToClone2
           td
-            input.personalcare.form-control.form-control-sm(type='date', placeholder='yyyy/mm/dd',min="1990-01-01", max="2040-12-31")
+            input.abbeyscale.form-control.form-control-sm(type='date', placeholder='yyyy/mm/dd',min="1990-01-01", max="2040-12-31")
           td
-            input.personalcare.form-control.form-control-sm(type='time', placeholder='hh:mm')
+            input.abbeyscale.form-control.form-control-sm(type='time', placeholder='hh:mm')
           td
-            select.testselect2.personalcare.SlectBox(multiple='multiple', data-live-search='true',name='test[]')
+            select.abbeyscale.form-control-sm
+                option(disabled='',selected='', value='')  -- select an option -- 
+                option(value='Nil') Nil Location
+                
+          td
+            textarea.abbeyscale(name='story',rows="3",cols='10')
+          td
+            select.abbeyscale.form-control-sm
+                option(disabled='',selected='', value='')  -- select an option -- 
+                option(value='None') None
+                
+          td
+            select.testselect3.abbeyscale.SelectBoox(multiple=' ',name='test[]')
                 option(value='Shower') Shower
                 option(value='Wash') Wash
-                option(value='Hair washed') Hair Washed
-                option(value='Oral care') Oral care
-                option(value='Shave') Shave 
-                option(value='Fingemails') Fingemails
-                option(value='Toenails') Toenails 
-                option(value='Trolley bath') Trolley bath
-                option(value='Application of moisturizer') Application of moisturizer
-            
+                option(value='Half') Half
+                option(value='Three quarter') Three quarter
+                option(value='Full') Full
           td
-            textarea.personalcare(name='story',rows="3",cols='33')
-            
+            select.testselect3.abbeyscale.SelectBoox(multiple=' ',name='test[]')
+                option(value='None') 1
+                option(value='2') 2
+                option(value='3') 3
+                
+         
           td
-            input.personalcare.form-control.form-control-sm(type='text',name='role' value='PCA')     
+            input.abbeyscale.form-control.form-control-sm(type='text',name='role' value='PCA')     
             
     a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
-    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfPC()')  Print PDF
+    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfAbbey()')  Print PDF
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
     //- input(type='button', onclick='tableToJson()', value='Submit Entries')
-    input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRows()', value='Add Row')
+    input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRowAbbey()', value='Add Row')

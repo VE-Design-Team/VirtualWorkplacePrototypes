@@ -53,7 +53,7 @@ const pdf = () => {
     doc.autoTable({ head: col, body: newArray });
     //[['21-10-2001','00:30','Apple','None','00:30','PCA']]
     //doc.autoTable(col1, rows1, { startY: 60 });
-    doc.save('Report.pdf');
+    doc.save('Food&Fluids.pdf');
 
 }
 

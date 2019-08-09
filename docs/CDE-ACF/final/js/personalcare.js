@@ -3,7 +3,7 @@ window.onload = function() {
         $('.testselect2').SumoSelect();
     }
   }
-  
+
 //function to add rows to table in PersonalCarePage
 
 let flag = 1
@@ -20,9 +20,9 @@ const addRows = () => {
         let InputType = clone.getElementsByClassName("personalcare")
         rowId++;
         let appendData = `<tr id="rowToClone_`+rowId+`">
-          <td><input class="foodrecord form-control form-control-sm" type="date" placeholder="yyyy/mm/dd" min="1990-01-01" max="2040-12-31" /></td>
-          <td><input class="foodrecord form-control form-control-sm" type="time" placeholder="hh:mm" /></td>
-          <td><select class="testselect2 foodrecord SlectBox`+rowId+`" multiple=" " name="test[]">
+          <td><input class="personalcare form-control form-control-sm" type="date" placeholder="yyyy/mm/dd" min="1990-01-01" max="2040-12-31" /></td>
+          <td><input class="personalcare form-control form-control-sm" type="time" placeholder="hh:mm" /></td>
+          <td><select class="testselect2 personalcare SlectBox`+rowId+`" multiple=" " name="test[]">
               <option value="Shower">Shower</option>
               <option value="Wash">Wash</option>
               <option value="Hair washed">Hair Washed</option>
@@ -32,8 +32,8 @@ const addRows = () => {
               <option value="Trolley bath">Trolley bath</option>
               <option value="Application of moisturizer">Application of moisturizer</option>
             </select></td>
-          <td><textarea class="foodrecord" name="story" rows="3" cols="33"></textarea></td> 
-          <td><input class="foodrecord form-control form-control-sm" type="text" name="role" value="PCA" /></td> 
+          <td><textarea class="personalcare" name="story" rows="3" cols="33"></textarea></td> 
+          <td><input class="personalcare form-control form-control-sm" type="text" name="role" value="PCA" /></td> 
         </tr>`
 
         for (let i = 0; i < InputType.length; i++) {

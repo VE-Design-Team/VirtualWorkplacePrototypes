@@ -110,3 +110,86 @@ function print(quality = 1) {
         pdf.save(filename);
     });
 }
+
+
+//chunks = []
+samplearr = []
+//chunkSize = 4
+function cont() {
+    const myTab = document.getElementsByClassName('contrecord'),
+        //tableData = []
+        _length = myTab.length;
+
+    for (let i = 0; i < _length; i++) {
+        const _value = myTab[i].value,
+            _innerText = myTab[i].innerText;
+        if (_value) {
+            console.log(_value);
+            tableData.push(_value)
+            //newTable.push(tableData)
+        } else if (_innerText) {
+            //console.log( _innerText );
+            tableData.push(_innerText)
+
+            //newTable.push(tableData)
+        }
+
+    }
+
+    console.log( tableData );
+    // tableData = []
+
+    //chunks.push(tableData.slice(0, 0 + chunkSize));
+
+    //console.log("first slice"+chunks)
+    let newrm =[]
+    let removed = tableData.splice(0,4);
+    for (let i =0;i<removed.length;i++){
+
+        if(i>=2){
+            newrm.push(" ")
+            newrm.push(removed[i])
+        }
+        else {
+            newrm.push(removed[i])
+        }
+    }
+    samplearr.push(newrm)
+   // samplearr.push(tableData)
+
+    //console.log(samplearr);
+}
+
+const pdfContinence = () => {
+    cont()
+    var doc = new jsPDF();
+    // let returnedTarget = Object.assign({}, tableData);
+    // console.log("inside the new fun  ")
+    // console.log(returnedTarget)
+    // console.log(returnedTarget[Object.keys(returnedTarget)[0]])
+    var col = [["Time", "Date","    ", "Date","    ", "Date","    "]];
+    //var col1 = ["Details", "Values"];
+    var rows = [];
+    var rows1 = [];    
+
+    // for (let i = 0; i < tableData.length; i++) {
+    //     arr.push(returnedTarget[Object.keys(returnedTarget)[i]])
+    //     rows.push(arr[i]);
+    // }
+    
+    let temparray
+    let chunk = 7; let len = tableData.length;
+    for (let i = 0; i < len; i += chunk) {
+        temparray = tableData.slice(i, i + chunk);
+        
+         // temparray.join(',').replace(/, ([^,]*)$/, ' and $1')
+        //}
+       samplearr.push(temparray)
+
+        // do whatever
+    }
+    console.log(samplearr)
+     doc.autoTable({ head: col, body: samplearr });
+     doc.save('continence.pdf');
+
+}

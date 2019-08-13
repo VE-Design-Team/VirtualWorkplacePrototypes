@@ -33,20 +33,20 @@
       br
       .row.ml-0.mr-0.mt-0.mb-4.shadow.bg-white.rounded-lg.p-0.col-12
         // Table
-        table#tablePreview.table.table-striped.table-hover.mb-0
+        table(role='table')#tablePreview.table.table-striped.table-hover.mb-0
           // Table head
-          thead
-            tr
+          thead(role='rowgroup')
+            tr(role='row')
               
-              th.w-20 Mark as read
-              th.w-20 Name
-              th.w-40 Subject
-              th.w-10 Date
-              th.w-10 Time
+              th(role='columnheader').w-20 Mark as read
+              th(role='columnheader').w-20 Name
+              th(role='columnheader').w-40 Subject
+              th(role='columnheader').w-10 Date
+              th(role='columnheader').w-10 Time
           // Table head
           // Table body
-          tbody
-            tr.accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo1',onclick='messageOne()')
+          tbody.message(role='rowgroup')
+            tr(role='row').accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo1',onclick='messageOne()')
             
               
               td.custom-control.custom-checkbox.mx-0.text-center
@@ -56,13 +56,13 @@
               td Message#1
               td#inbox1 
               td#time1
-            tr
+            tr(role='row')
               td.hiddenRow.p-0(colspan='6')
                 #demo1.accordian-body.collapse.p-4  Mr.Huang has complained people have stolen his 
                   |property but he has dementia and we can’t find any evidence of this 
                   |has actually happened. Please make sure you only enter his room with two 
                   |people so there is a witness to all activity.
-            tr.accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo2',onclick='messageTwo()')
+            tr(role='row').accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo2',onclick='messageTwo()')
             
               td.custom-control.custom-checkbox.mx-0.text-center
                 input#customCheck2.custom-control-input.position-relative(type='checkbox')
@@ -71,7 +71,7 @@
               td Message#2
               td#inbox2
               td#time2 
-            tr
+            tr(role='row')
               td.hiddenRow.p-0(colspan='6')
                 #demo2.accordian-body.collapse.p-4  Dear Valued staff member, 
                   |

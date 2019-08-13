@@ -189,7 +189,10 @@ const pdfContinence = () => {
         // do whatever
     }
     console.log(samplearr)
-     doc.autoTable({ head: col, body: samplearr });
+    let header = function (data) {
+        doc.text("Urinary Continence", data.settings.margin.left, 10);
+      };
+     doc.autoTable({ head: col, body: samplearr,beforePageContent: header });
      doc.save('continence.pdf');
 
 }

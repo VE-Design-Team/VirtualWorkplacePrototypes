@@ -2,7 +2,30 @@ tableData = []
 newArray = []
 arr = []
 //newTable=[]
+
+formcheck=() => {
+
+    console.log("inside formcheck")
+   let fields = ["Date", "Time", "Food Item", "Amount Taken","Time Taken","Role"];
+  // if (username === ' ' )
+   //alert("cannot be empty")
+//    let InputType = document.getElementsByClassName("foodrecord")
+//    for (let i = 0; i < InputType.length; i++){
+//        if(InputType[i].textContent=== ' ')
+//        alert("All fields must be entered")
+//    }
+         let date = document.getElementById('date').value
+         let time = document.getElementById('time').value
+        // let fooditem = document.getElementById('fooditem').value
+        // let amount = document.getElementById('amountTaken').value
+        // let timetaken = document.getElementById('timeTaken').value
+        // let role = document.getElementById('role').value
+
+
+}
+
 const pdf = () => {
+    //formcheck()
     tableToJson()
     var doc = new jsPDF();
     let returnedTarget = Object.assign({}, tableData);
@@ -49,8 +72,11 @@ const pdf = () => {
 
         // do whatever
     }
+    let header = function (data) {
+        doc.text("Food and Fluids record", data.settings.margin.left, 10);
+      };
 
-    doc.autoTable({ head: col, body: newArray });
+    doc.autoTable({ head: col, body: newArray,beforePageContent: header });
     //[['21-10-2001','00:30','Apple','None','00:30','PCA']]
     //doc.autoTable(col1, rows1, { startY: 60 });
     doc.save('Food&Fluids.pdf');
@@ -117,3 +143,4 @@ function tableToJson() {
 // }
 // console.log("temprray" + " "+temparray)
 // }
+

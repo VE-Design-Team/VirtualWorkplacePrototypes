@@ -35,11 +35,11 @@
 //     newSelectList.appendChild(option)
 // }
 
-window.onload = function() {
-    if (window.location.href.indexOf('messageboard.html') > -1) {
-      currentDateAndTime();
-    }
-  }
+// window.onload = function() {
+//     if (window.location.href.indexOf('messageboard.html') > -1) {
+//       currentDateAndTime();
+//     }
+//   }
 
 //login form validation
 const login = () => {
@@ -61,51 +61,6 @@ const loginInfo = () => {
     alert("Your Username is: 'PCAstudent' \nPassword is:'C4DE_learn'")
 }
 
-//Print current date on messageBoard
-currentDateAndTime = () => {
-let today = new Date();
-let dd = today.getDate();
-let mm = today.getMonth() + 1; //January is 0!
-let yyyy = today.getFullYear();
-
-if (dd < 10) {
-    dd = '0' + dd
-}
-
-if (mm < 10) {
-    mm = '0' + mm
-}
-
-// today = yyyy + '/' + mm + '/' + dd;
-today = yyyy + '/' + mm + '/' + dd;
-todayDate = dd + '-' + mm + '-' + yyyy
-
-// console.log(today);
-document.getElementById('inlineFormInput').value = today;
-document.getElementById('inlineFormInputGroup').value = today;
-document.getElementById('inbox1').innerHTML = todayDate;
-document.getElementById('inbox2').innerHTML = todayDate;
-
-//Prints the current local time in messageBoard
-(() => {
-    const checkTime = (i) => {
-        return (i < 10) ? "0" + i : i;
-    }
-
-    const startTime = () => {
-        var today = new Date(),
-            h = checkTime(today.getHours()),
-            m = checkTime(today.getMinutes()),
-            s = checkTime(today.getSeconds());
-        document.getElementById('time1').innerHTML = h + ":" + m
-        document.getElementById('time2').innerHTML = h + ":" + m
-        t = setTimeout(function () {
-            startTime()
-        }, 500);
-    }
-    startTime();
-})();
-}
 
 messageOne = () => document.getElementById("customCheck1").checked = true;
 
@@ -116,7 +71,7 @@ route = () => {
     if (document.getElementById("customCheck1").checked && document.getElementById("customCheck2").checked)
         window.location.href = 'patientrecord.html';
     else
-        alert("Read all message to proceed")
+        alert("Please read all messages to proceed")
 }
 //function to add rows to table in foodrecordPage
 let count = 1
@@ -146,5 +101,4 @@ const addRow = () => {
     }
 
 }
-
 

@@ -90,8 +90,10 @@ let tableDa = Array();
     let arr = tableDa.map(Object.values);
     // console.log("Printing ARR")
     // console.log(arr)
-
-    doc.autoTable({ head: col, body: arr });
+    let header = function (data) {
+      doc.text("Personal Care", data.settings.margin.left, 10);
+    };
+    doc.autoTable({ head: col, body: arr,beforePageContent: header });
     doc.save('Personal Care.pdf');
 
 }

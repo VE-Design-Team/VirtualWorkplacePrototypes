@@ -194,5 +194,6 @@ const pdfContinence = () => {
       };
      doc.autoTable({ head: col, body: samplearr,beforePageContent: header });
      doc.save('continence.pdf');
+     clearAll()
 
 }

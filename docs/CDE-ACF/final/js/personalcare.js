@@ -95,5 +95,5 @@ let tableDa = Array();
     };
     doc.autoTable({ head: col, body: arr,beforePageContent: header });
     doc.save('Personal Care.pdf');
-
+    clearAll()
 }

@@ -292,56 +292,57 @@ const addRowAbbey = () => {
 }
 
 let tableVal = Array();
-goAbbey=()=> {
+// goAbbey=()=> {
   
-  let i = 0;
-    $("#tablePreviewAbbey tbody tr").each(function () {
-                let date = $(this).find("td").eq(0).find(":input").val();
-                 let time = $(this).find("td").eq(1).find(":input").val();
-                 let sel =  $(this).find("td").eq(2).find("select option:selected").map(function(i, el) {
-                  return $(el).val();
-              }).get();
-                let textarea1 = $(this).find("td").eq(3).find("textarea").val(); 
+//   let i = 0;
+//     $("#tablePreviewAbbey tbody tr").each(function () {
+//                 let date = $(this).find("td").eq(0).find(":input").val();
+//                  let time = $(this).find("td").eq(1).find(":input").val();
+//                  let sel =  $(this).find("td").eq(2).find("select option:selected").map(function(i, el) {
+//                   return $(el).val();
+//               }).get();
+//                 let textarea1 = $(this).find("td").eq(3).find("textarea").val(); 
            
-              let sel1 =  $(this).find("td").eq(4).find("select option:selected").map(function(i, el) {
-                  return $(el).val();
-              }).get();
-                let selectValus =  $(this).find("td").eq(5).find("select option:selected").map(function(i, el) {
-                                  return $(el).val();
-                              }).get();
-              let severe =  $(this).find("td").eq(6).find("select option:selected").map(function(i, el) {
-                                  return $(el).val();
-                              }).get();  
-                 let role = $(this).find("td").eq(7).find(":input").val();
-                 let row = {
-                   date: date,
-                   time: time,
-                   sel: sel,
-                   textarea1: textarea1,
-                   sel1:sel1,
-                   selectValus: selectValus,
-                   severe: severe,
-                   role: role
-                 }
-                 tableVal.push(row);
-            })
-            console.log(tableVal)
-}
+//               let sel1 =  $(this).find("td").eq(4).find("select option:selected").map(function(i, el) {
+//                   return $(el).val();
+//               }).get();
+//                 let selectValus =  $(this).find("td").eq(5).find("select option:selected").map(function(i, el) {
+//                                   return $(el).val();
+//                               }).get();
+//               let severe =  $(this).find("td").eq(6).find("select option:selected").map(function(i, el) {
+//                                   return $(el).val();
+//                               }).get();  
+//                  let role = $(this).find("td").eq(7).find(":input").val();
+//                  let row = {
+//                    date: date,
+//                    time: time,
+//                    sel: sel,
+//                    textarea1: textarea1,
+//                    sel1:sel1,
+//                    selectValus: selectValus,
+//                    severe: severe,
+//                    role: role
+//                  }
+//                  tableVal.push(row);
+//             })
+//             console.log(tableVal)
+// }
 
 
-const pdfAbbey = () => {
-  goAbbey()
-  var doc = new jsPDF();
-  var col = [["Date", "Time", "Location", "Verbal/Non Verbal","Comments","xxxx","xxxxx", "Role"]];
+// const pdfAbbey = () => {
+//   goAbbey()
+//   var doc = new jsPDF();
+//   var col = [["Date", "Time", "Location", "Verbal/Non Verbal","Comments","xxxx","xxxxx", "Role"]];
 
-  let arr = tableVal.map(Object.values);
-  // console.log("Printing ARR")
-  // console.log(arr)
+//   let arr = tableVal.map(Object.values);
+//   // console.log("Printing ARR")
+//   // console.log(arr)
 
-  doc.autoTable({ head: col, body: arr });
-  doc.save('Abbey scale.pdf');
+//   doc.autoTable({ head: col, body: arr });
+//   doc.save('Abbey scale.pdf');
+  
 
-}
+// }
 
 var selects = $('select[name^=score]');
 selects.change(function(){
@@ -352,8 +353,8 @@ selects.change(function(){
 
 rowws = []
 tableDaata = [] 
-function prit () {
-  sa()
+const pdfAbbey =()=> {
+  goAbbey()
 
   var doc = new jsPDF('l', 'mm', 'a4');
   var col = [["Date", "Time", "Location", "Verbal/Non Verbal","Comments","Vocalisation","Physiological change", "Physical change","Facial Expression","Change in body language","Behavioural change","Total score"]];
@@ -374,24 +375,10 @@ let header = function (data) {
 };
   doc.autoTable({ head: col, body: rowws,beforePageContent: header });
   doc.save('Abbey scale.pdf');
+  clearAll()
 }
-//     var doc = new jsPDF();          
-// var elementHandler = {
-//   '#ignorePDF': function (element, renderer) {
-//     return true;
-//   }
-// };
-// var source = document.getElementById("abb")[0];
-// doc.fromHTML(
-//     source,
-//     15,
-//     15,
-//     {
-//       'width': 180,'elementHandlers': elementHandler
-//     });
 
-// doc.output("dataurlnewwindow");
-function sa() {
+const goAbbey=()=> {
 const myTab = document.getElementsByClassName('abbeyscale'),
       //tableData = []
       _length = myTab.length;

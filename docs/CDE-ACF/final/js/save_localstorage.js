@@ -3,26 +3,26 @@ newArray = []
 arr = []
 //newTable=[]
 
-formcheck=() => {
+// formcheck=() => {
 
-    console.log("inside formcheck")
-   let fields = ["Date", "Time", "Food Item", "Amount Taken","Time Taken","Role"];
-  // if (username === ' ' )
-   //alert("cannot be empty")
-//    let InputType = document.getElementsByClassName("foodrecord")
-//    for (let i = 0; i < InputType.length; i++){
-//        if(InputType[i].textContent=== ' ')
-//        alert("All fields must be entered")
-//    }
-         let date = document.getElementById('date').value
-         let time = document.getElementById('time').value
+//     console.log("inside formcheck")
+//    let fields = ["Date", "Time", "Food Item", "Amount Taken","Time Taken","Role"];
+//   // if (username === ' ' )
+//    //alert("cannot be empty")
+// //    let InputType = document.getElementsByClassName("foodrecord")
+// //    for (let i = 0; i < InputType.length; i++){
+// //        if(InputType[i].textContent=== ' ')
+// //        alert("All fields must be entered")
+// //    }
+//          let date = document.getElementById('date').value
+//          let time = document.getElementById('time').value
         // let fooditem = document.getElementById('fooditem').value
         // let amount = document.getElementById('amountTaken').value
         // let timetaken = document.getElementById('timeTaken').value
         // let role = document.getElementById('role').value
 
 
-}
+//}
 
 const pdf = () => {
     //formcheck()
@@ -80,6 +80,7 @@ const pdf = () => {
     //[['21-10-2001','00:30','Apple','None','00:30','PCA']]
     //doc.autoTable(col1, rows1, { startY: 60 });
     doc.save('Food&Fluids.pdf');
+    clearAll()
 
 }
 
@@ -111,36 +112,24 @@ function tableToJson() {
 
 }
 
-// tableDat = []
-// function cont() {
-//     const myTable = document.getElementsByClassName('contrecord'),
-//         //tableData = []
-//         _length_ = myTable.length;
+function clearAll () {
+    window.location.reload()
+}
 
-//     for (let i = 0; i < _length_; i++) {
-//         const _value_ = myTable[i].value,
-//             _innerText_ = myTable[i].innerText;
-//         if (_value_) {
-//             console.log(_value_);
-//             tableDat.push(_value_)
-//             //newTable.push(tableData)
-//         } else if (_innerText_) {
-//             //console.log( _innerText );
-//             tableDat.push(_innerText_)
+// const check = ()=> {
+//     const myTab = document.getElementsByClassName('foodrecord'),
+//     //tableData = []
+//     _length = myTab.length;
 
-//             //newTable.push(tableData)
-//         }
-//         //console.log(tableDat)
+// for (let i = 0; i < _length; i++) {
+//     const _value = myTab[i].value,
+//         _innerText = myTab[i].innerText;
+//     if (_value) {
+        
+//     } else  {
+//         alert("all fields are mandatory")
 //     }
-//     //console.log(tableDat)
-//     slicearr()
+
 // }
-// temparray = []
-// slicearr = () => {
-// var i,chunk = 4;
-// for (i=0; i<4; i+=chunk) {
-//     temparray = tableDat.slice(i,i+chunk);
-// }
-// console.log("temprray" + " "+temparray)
 // }
 

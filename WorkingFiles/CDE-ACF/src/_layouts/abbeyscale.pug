@@ -62,11 +62,12 @@
           //-   input.abbeyscale.form-control.form-control-sm(type='text',name='role' value='PCA')     
     #abb
     p
-    | Vocalisation 
+    | #[strong Vocalisation] 
     br
     | (e.g whimpering,groaning,crying)
     br
-    | Absent:0,Mild:1,Moderate:2,Severe 3
+    | Absent:0, Mild:1, Moderate:2, Severe 3
+    br
     select.abbeyscale.form-control-sm(name='score[1]')
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='0') 0
@@ -74,11 +75,12 @@
                 option(value='2') 2
                 option(value='3') 3
     p
-    | Physiological Change 
+    | #[strong Physiological Change] 
     br
     | (e.g temperature pulse or blood pressure outside normal limits,perspiring,flushing or pallor)
     br
-    | Absent:0,Mild:1,Moderate:2,Severe 3
+    | Absent:0, Mild:1, Moderate:2, Severe 3
+    br
     select.abbeyscale.form-control-sm(name='score[2]')
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='0') 0
@@ -87,11 +89,12 @@
                 option(value='3') 3
           
     p
-    | Physical Change
+    | #[strong Physical Change] 
     br
     | (e.g skin tears,pressure areas,arthritis,contractures,previous injuries)
     br
-    | Absent:0,Mild:1,Moderate:2,Severe 3
+    | Absent:0, Mild:1, Moderate:2, Severe 3
+    br
     select.abbeyscale.form-control-sm(name='score[3]')
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='0') 0
@@ -100,11 +103,12 @@
                 option(value='3') 3
 
     p
-    | Facial Expression
+    |  #[strong Facial Expression]
     br
     | (e.g looking tense,frowning,grimacing,looking frightened)
     br
-    | Absent:0,Mild:1,Moderate:2,Severe 3
+    | Absent:0, Mild:1, Moderate:2, Severe 3
+    br
     select.abbeyscale.form-control-sm(name='score[4]')
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='0') 0
@@ -113,11 +117,12 @@
                 option(value='3') 3
 
     p
-    | Change in body language
+    | #[strong Change in body language]
     br
     | (e.g fidgeting,rocking,guarding part of body,withdrawn)
     br
-    | Absent:0,Mild:1,Moderate:2,Severe 3
+    | Absent:0, Mild:1, Moderate:2, Severe 3
+    br
     select.abbeyscale.form-control-sm(name='score[5]')
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='0') 0
@@ -125,11 +130,12 @@
                 option(value='2') 2
                 option(value='3') 3
     p
-    | Behavioural change
+    | #[strong Behavioural change]
     br
     | (e.g fidgeincreased confusion,refusing to eat,alteration in usual patterns)
     br
-    | Absent:0,Mild:1,Moderate:2,Severe 3
+    | Absent:0, Mild:1, Moderate:2, Severe 3
+    br
     select.abbeyscale.form-control-sm(name='score[6]')
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='0') 0
@@ -139,12 +145,12 @@
 
     br
     br
-    | Total Pain Score 
+    | #[strong Total Pain Score] 
     input#total.abbeyscale.form-control-sm(type='text',maxlength='4',size='4',name='total')
 
-            
-    a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
-    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfAbbey()')  Print PDF
+    .row.pt-4.position-inherit.float-right
+      a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
+      a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfAbbey()')  Print PDF
           //-a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
           //- input(type='button', onclick='tableToJson()', value='Submit Entries')
       //- input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRowAbbey()', value='Add Row')

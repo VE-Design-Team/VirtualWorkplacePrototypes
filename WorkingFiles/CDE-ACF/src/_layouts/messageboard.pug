@@ -8,11 +8,11 @@
       //-   .col-10
       //-     input#example-datetime-local-input.form-control(type='datetime-local', value='2011-08-19T13:45:00')
       form.form-inline.pb-4
-        label.pr-2(for='inlineFormInput') From date: 
+        label.pr-2(for='inlineFormInput') From date:
          input#inlineFormInput.form-control.mb-2.mr-sm-2.ml-sm-2(type='text')
         label(for='inlineFormInputGroup') To date:
         .mb-2.mr-sm-2.mb-sm-0
-          .input-group-addon 
+          .input-group-addon
           input#inlineFormInputGroup.form-control.mr-sm-2.ml-sm-2.mb-2(type='text')
           button.btn.btn-secondary.mb-2(type='submit') Submit
         input#inlineRadio1.form-check-input(type='radio', name='inlineRadioOptions', value='option1')
@@ -26,7 +26,7 @@
           |  Individuals
         input#inlineCheckbox1.form-check-input(type='checkbox', value='option1')
         .input_inline
-          |  Unread only 
+          |  Unread only
       //- a.btn.btn-primary(href='#') New
       //- a.btn.btn-primary(href='#') Mark all as read
       br
@@ -37,7 +37,7 @@
           // Table head
           thead(role='rowgroup')
             tr(role='row')
-              
+
               th(role='columnheader').w-20 Mark as read
               th(role='columnheader').w-20 Name
               th(role='columnheader').w-40 Subject
@@ -47,49 +47,49 @@
           // Table body
           tbody.message(role='rowgroup')
             tr.accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo1',onclick='messageOne()')
-            
-              
+
+
               td.custom-control.custom-checkbox.mx-0.text-center
                 input#customCheck1.custom-control-input.position-relative(type='checkbox')
-                label.custom-control-label(for='customCheck1') 
+                label.custom-control-label(for='customCheck1')
               td Admin
               td Message#1
-              td#inbox1 
+              td#inbox1
               td#time1
             tr
               td.hiddenRow.p-0(colspan='6')
-                #demo1.accordian-body.collapse.p-4  Mr.Huang has complained people have stolen his 
-                  |property but he has dementia and we can’t find any evidence of this 
-                  |has actually happened. Please make sure you only enter his room with two 
+                #demo1.accordian-body.collapse.p-4  Mr.Huang has complained people have stolen his
+                  |property but he has dementia and we can’t find any evidence this 
+                  |has actually happened. Please make sure you only enter his room with two
                   |people so there is a witness to all activity.
             tr.accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo2',onclick='messageTwo()')
-            
+
               td.custom-control.custom-checkbox.mx-0.text-center
                 input#customCheck2.custom-control-input.position-relative(type='checkbox')
-                label.custom-control-label(for='customCheck2') 
+                label.custom-control-label(for='customCheck2')
               td Admin
               td Message#2
               td#inbox2
-              td#time2 
+              td#time2
             tr
               td.hiddenRow.p-0(colspan='6')
-                #demo2.accordian-body.collapse.p-4  Dear Valued staff member, 
+                #demo2.accordian-body.collapse.p-4  Dear Valued staff member,
                   |
                   br
                   |There is a compulsory meeting today in the staff room at 14:00.
                   | All staff are required to attend.
-                  
-         
+
+
             //- tr
-            
+
             //-   td.custom-control.custom-checkbox
             //-     input#customCheck3.custom-control-input(type='checkbox')
-            //-     label.custom-control-label(for='customCheck3')  
+            //-     label.custom-control-label(for='customCheck3')
             //-   td Bird
             //-   td @twitter
             //-   td 2 Jul 2019
             //-   td 16:14:20
-            
+
 
       .row.p-0.m-0.float-right
         a.btn.btn-primary.float-right(onclick='route()')  Proceed

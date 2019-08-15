@@ -7,12 +7,16 @@
       thead
         tr
           th Date
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This number is automatically generated from the numbers you record above')
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
         
           th Time
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the hours or minutes input.')
           th Location
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Which area of the resident’s body is the pain located')
           th Verbal/Non Verbal
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Is the resident able to speak to assist you with your questions')
           th Comments
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Record any information which may be of assistance')
           //- th xxxx
           //- th xxxxx
           //- th Role
@@ -150,14 +154,17 @@
     br
     br
     | #[strong Total Pain Score] 
-    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This number is automatically generated from the numbers you record above')
+    
     input#total.abbeyscale.form-control-sm(type='text',maxlength='4',size='4',name='total',disabled)
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This number is automatically generated from the numbers you record above')
 
     .row.pt-4.position-inherit.float-right
+      
+      a.btn.btn.btn-sm.btn-primary.mr-2c(href='patientrecord.html')  Back
       i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
-      a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
-      i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
+      
       a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfAbbey()')  Save to PDF
+      i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
           //-a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
           //- input(type='button', onclick='tableToJson()', value='Submit Entries')
       //- input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRowAbbey()', value='Add Row')

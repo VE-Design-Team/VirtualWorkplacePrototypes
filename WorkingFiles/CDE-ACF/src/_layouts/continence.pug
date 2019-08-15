@@ -16,9 +16,13 @@
       thead(role='rowgroup')
         tr(role='row')
           th(role='columnheader') Time
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This column is already filled with times, you don’t have input anything. Just go to the time you want to record information on and work across from them')
           th(role='columnheader') Date
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
           th(role='columnheader') Date
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
           th(role='columnheader') Date
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
       tbody.continence(role='rowgroup')#tableToModify
         tr(role='row')
           td(role='cell')
@@ -853,7 +857,9 @@
 
 
     a.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
     a.btn.btn-sm.btn-primary.mr-2(onclick='pdfContinence()')  Print PDF
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
     //-a.btn.btn-sm.btn-primary(onclick='cont()')  Submit Entries
     //-input.btn.btn-sm.btn-primary.mr-2(type='button', onclick='cont()', value='Submit Entries')
     //-input.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addMoreRow()', value='Add Row')

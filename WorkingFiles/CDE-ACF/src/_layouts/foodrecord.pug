@@ -7,11 +7,18 @@
       thead(role='rowgroup')
         tr(role='row')
           th(role='columnheader') Date
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
           th(role='columnheader') Time
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the hours or minutes input ')
           th(role='columnheader') Food Item
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='List all the food items offered and specify items the resident did not eat.')
           th(role='columnheader') Amount Taken
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='The amount eaten of the total amount of food offered')
           th(role='columnheader') Time Taken
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='How long it took to eat the amount of food they finally consumed.')
           th(role='columnheader') Role
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This uses your login details to fill automatically ')
+
       tbody.food#tableToModify
         tr(role='row')#rowToClone
           td(role='cell')
@@ -48,8 +55,11 @@
             input.foodrecord.form-control.form-control-sm(type='text',name='role' value='PCA')     
             
     a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
-    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdf()')  Print PDF
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
+    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdf()')  Save to PDF
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
     //a#submit.btn.btn.btn-sm.btn-primary Submit Entries
     //input(type='button', onclick='tableToJson()', value='Submit Entries')
     input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRow()', value='Add Row')
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Creates another row if you are recording more than one meal')

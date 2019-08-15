@@ -7,10 +7,15 @@
       thead(role='rowgroup')
         tr(role='row')
           th(role='columnheader') Date
-          th(role='columnheader') Time
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
+          th(role='columnheader') Time  
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the hours or minutes input ')
           th(role='columnheader') ADL
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Check the Activities of Daily Living performed')
           th(role='columnheader') Comments
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Include any additional information or changes to the care plan')
           th(role='columnheader') Role
+            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This uses your login details to fill automatically ')
       tbody.personal(role='rowgroup')#tableToModify
         tr(role='row')#rowToClone
           td(role='cell')
@@ -36,7 +41,11 @@
             input.personalcare.form-control.form-control-sm(type='text',name='role' value='PCA')
 
     a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
-    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfPC()')  Print PDF
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
+    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfPC()') Save to PDF
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
+    
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
     //- input(type='button', onclick='tableToJson()', value='Submit Entries')
     input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRows()', value='Add Row')
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Creates another row if you are recording more than one meal')

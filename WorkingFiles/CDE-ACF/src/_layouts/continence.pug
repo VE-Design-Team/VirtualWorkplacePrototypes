@@ -15,13 +15,13 @@
     table(role='table')#tablePreview.table.table-striped.table-hover
       thead(role='rowgroup')
         tr(role='row')
-          th(role='columnheader') Time
+          th.w-10(role='columnheader') Time
             i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This column is already filled with times, you don’t have input anything. Just go to the time you want to record information on and work across from them')
-          th(role='columnheader') Date
+          th.w-30(role='columnheader') Date
             i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
-          th(role='columnheader') Date
+          th.w-30(role='columnheader') Date
             i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
-          th(role='columnheader') Date
+          th.w-30(role='columnheader') Date
             i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
       tbody.continence(role='rowgroup')#tableToModify
         tr(role='row')
@@ -43,7 +43,7 @@
           td(role='cell')
             input#continTime.contrecord.form-control-sm.form-control(type='text',value="00:00",disabled)
           td(role='cell')
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -51,9 +51,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td(role='cell')
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -61,9 +61,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td(role='cell')
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -71,13 +71,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr(role='row')
           td(role='cell')
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="01:00",disabled)
             
           td(role='cell')
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -85,9 +85,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td(role='cell')
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -95,9 +95,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td(role='cell')
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -105,13 +105,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.form-control.contrecord.form-control-sm(type='text',value="02:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -119,9 +119,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -129,9 +129,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -139,13 +139,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.form-control.contrecord.form-control-sm(type='text',value="03:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -153,9 +153,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -163,9 +163,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -173,13 +173,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.form-control.contrecord.form-control-sm(type='text',value="04:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -187,9 +187,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -197,9 +197,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -207,13 +207,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="05:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -221,9 +221,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -231,9 +231,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -241,13 +241,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="06:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -255,9 +255,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -265,9 +265,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -275,13 +275,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="07:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -289,9 +289,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -299,9 +299,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -309,13 +309,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="08:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -323,9 +323,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -333,9 +333,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -343,13 +343,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="09:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -357,9 +357,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -367,9 +367,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -377,13 +377,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="10:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -391,9 +391,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -401,9 +401,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -411,13 +411,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="11:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -425,9 +425,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -435,9 +435,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -445,13 +445,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="12:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -459,9 +459,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -469,9 +469,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -479,13 +479,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="13:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -493,9 +493,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -503,9 +503,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -513,13 +513,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="14:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -527,9 +527,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -537,9 +537,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -547,13 +547,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="15:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -561,9 +561,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -571,9 +571,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -581,13 +581,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="16:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -595,9 +595,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -605,9 +605,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -615,13 +615,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="17:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -629,9 +629,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -639,9 +639,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -649,13 +649,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="18:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -663,9 +663,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -673,9 +673,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -683,13 +683,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="19:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -697,9 +697,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -707,9 +707,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -717,13 +717,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="20:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -731,9 +731,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -741,9 +741,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -751,13 +751,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="21:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -765,9 +765,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -775,9 +775,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -785,13 +785,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="22:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -799,9 +799,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -809,9 +809,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -819,13 +819,13 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           tr
           td
             input#continTime.contrecord.form-control.form-control-sm(type='text',value="23:00",disabled)
             
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -833,9 +833,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -843,9 +843,9 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
           td
-            select.col-6.align-top.continOption.contrecord.form-control-sm
+            select.col-9.align-top.continOption.contrecord.form-control-sm.form-control.d-inline
                 option(disabled='',selected='', value='')  -- select an option -- 
                 option(value='1') 1 Incontinent of urine
                 option(value='2') 2 Pad change for incontinence of urine  
@@ -853,7 +853,7 @@
                 option(value='4') 4 Passed urine
                 option(value='4b') 4b Dry
                 option(value='c') c Resident continent
-            textarea.float-right.col-5.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
+            textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
 
 
     a.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back

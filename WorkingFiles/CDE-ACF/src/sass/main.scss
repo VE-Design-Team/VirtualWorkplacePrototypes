@@ -3,7 +3,7 @@ html, body {
   margin: 0;
 }
 .logo {
-  max-height:80px; 
+  max-height:80px;
 }
 .content {
   padding: 20px;
@@ -40,6 +40,10 @@ html, body {
 .w-10
 {
   width: 10%;
+}
+.w-15
+{
+  width: 15%;
 }
 .w-20
 {
@@ -171,7 +175,7 @@ html, body {
     }
 
     tbody.continence {
-      td:nth-of-type(1):before { content: "Time"; }
+      td:nth-of-type(1):before { content: "Time";}
       td:nth-of-type(2):before { content: "Date"; }
       td:nth-of-type(3):before { content: "Date"; }
       td:nth-of-type(4):before { content: "Date"; }
@@ -193,3 +197,9 @@ html, body {
     td:nth-of-type(5):before { content: "Time"; }
     }
 	}
+  tbody.continence {
+    td:nth-of-type(1) { }
+    td:nth-of-type(2) { background: #eeeeee;}
+    td:nth-of-type(3) { }
+    td:nth-of-type(4) {  background: #eeeeee;}
+  }

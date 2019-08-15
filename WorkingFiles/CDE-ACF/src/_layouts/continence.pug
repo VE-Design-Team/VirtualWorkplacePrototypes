@@ -8,7 +8,7 @@
     form.form-horizontal
         fieldset
             // Form Name
-            legend Urinary Continence 
+            legend Urinary Continence
     //a.btn.btn-sm.btn-primary(href='continence.html')  Urinary record
     //- /a.btn.btn-sm.btn-primary(href='#')  Bowel chart
 
@@ -22,19 +22,19 @@
       tbody.continence(role='rowgroup')#tableToModify
         tr(role='row')
           td(role='cell')
-            input#continTime.contrecord.form-control(type='text' value=" " disabled)
+           //- input#continTime.contrecord.form-control(type='text' value=" " disabled)
           td(role='cell')
             input#continDate.contrecord.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
             ,min="1990-01-01", max="2040-12-31")
-            
+
           td(role='cell')
             input#continDate.contrecord.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
             ,min="1990-01-01", max="2040-12-31")
-            
+
           td(role='cell')
             input#continDate.contrecord.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
             ,min="1990-01-01", max="2040-12-31")
-        .highlight 
+        .highlight
           tr(role='row')#rowToClone
           td(role='cell')
             input#continTime.contrecord.form-control-sm.form-control(type='text',value="00:00",disabled)

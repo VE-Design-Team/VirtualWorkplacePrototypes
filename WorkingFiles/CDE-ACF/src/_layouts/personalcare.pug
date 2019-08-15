@@ -23,20 +23,20 @@
                 option(value='Wash') Wash
                 option(value='Hair washed') Hair Washed
                 option(value='Oral care') Oral care
-                option(value='Shave') Shave 
-                option(value='Fingemails') Fingemails
-                option(value='Toenails') Toenails 
+                option(value='Shave') Shave
+                option(value='Fingernails') Fingernails
+                option(value='Toenails') Toenails
                 option(value='Trolley bath') Trolley bath
-                option(value='Application of moisturizer') Application of moisturizer
-            
+                option(value='Moisturizer') Moisturizer
+
           td(role='cell')
             textarea.personalcare(name='story',rows="3",cols='33')
-            
+
           td(role='cell')
-            input.personalcare.form-control.form-control-sm(type='text',name='role' value='PCA')     
-            
+            input.personalcare.form-control.form-control-sm(type='text',name='role' value='PCA')
+
     a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
     a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfPC()')  Print PDF
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
     //- input(type='button', onclick='tableToJson()', value='Submit Entries')
-    input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRows()', value='Add Row') 
+    input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRows()', value='Add Row')

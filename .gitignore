@@ -3,4 +3,3 @@ node_modules
 .sass-cache
 *.thumb
 npm-debug.log
-docs/CDE-ACF/final/*.html

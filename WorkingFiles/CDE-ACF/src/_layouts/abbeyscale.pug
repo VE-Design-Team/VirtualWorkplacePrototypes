@@ -6,7 +6,7 @@
      table#tablePreviewAbbey.table.table-striped.table-hover
       thead
         tr
-          th Date
+          th Date 
           th Time
           th Location
           th Verbal/Non Verbal
@@ -39,6 +39,8 @@
                 
           td
             textarea.abbeyscale(name='story',rows="3",cols='10')
+            
+            
           //- td
           //-   select.abbeyscale.form-control-sm
           //-       option(disabled='',selected='', value='')  -- select an option -- 
@@ -146,11 +148,14 @@
     br
     br
     | #[strong Total Pain Score] 
+    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This number is automatically generated from the numbers you record above')
     input#total.abbeyscale.form-control-sm(type='text',maxlength='4',size='4',name='total',disabled)
 
     .row.pt-4.position-inherit.float-right
+      i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
       a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
-      a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfAbbey()')  Print PDF
+      i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
+      a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfAbbey()')  Save to PDF
           //-a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
           //- input(type='button', onclick='tableToJson()', value='Submit Entries')
       //- input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRowAbbey()', value='Add Row')

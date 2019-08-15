@@ -465,3 +465,30 @@ function validateNumber(event) {
     return true;
   }
 };
+
+
+$(document).ready(function() {
+
+  $('[data-toggle="popover"]').popover();
+
+
+  $(document).on('show.bs.popover', function(event) {
+    // could use [data-toggle="popover"] instead
+    // using a different selector allows to have different sets of single instance popovers.
+    $('[data-popover-type="singleton"]').not(event.target).each(function(key, el) {
+      $(el).popover('hide'); // this way everything gets propagated properly
+    });
+  });
+
+  $(document).on('click', function(event) {
+    // choose to close all popovers if clicking on anything but a popover element.
+    if (!($(event.target).data('toggle') === "popover" /* the trigger buttons */ 
+          || $(event.target).hasClass('popover') /* the popup menu */
+          || $(event.target).parents('.popover[role="tooltip"]').length /* this one is a bit fiddly but also catches child elements of the popup menu. */ )) {
+      
+      $('[data-toggle="popover"]').popover('hide');
+    }
+  });
+
+
+});

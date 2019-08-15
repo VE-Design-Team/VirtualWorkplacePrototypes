@@ -19,7 +19,7 @@
           td
             input.abbeyscale.form-control.form-control-sm(type='date', placeholder='yyyy/mm/dd',min="1990-01-01", max="2040-12-31")
           td
-            input.abbeyscale.form-control.form-control-sm(type='time', placeholder='hh:mm')
+            input#time.abbeyscale.form-control.form-control-sm(type='text',pattern="\d{1,2}:\d{1,2}" name='time' placeholder='hh:mm',min='00:00',max='23:00',required="required")
           td
             select.abbeyscale.form-control-sm
                 option(disabled='',selected='', value='')  -- select an option -- 

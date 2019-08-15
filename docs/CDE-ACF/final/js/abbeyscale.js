@@ -401,3 +401,67 @@ const myTab = document.getElementsByClassName('abbeyscale'),
   console.log(tableDaata)
   rowws.push(tableDaata)
 }
+
+// let c=0
+ 
+// $('#time').on('focusout', function(){
+//  const regex = /^\d+((:\d+)*|-\d+)?$/;
+// const str =document.getElementById('time');
+// let m;
+
+// if ((m = regex.exec(str)) !== null) {
+//     // The result can be accessed through the `m`-variable.
+//    // m.forEach((match, groupIndex) => {
+//         alert("time field must be in HH:MM format")
+//    // });
+// }
+// else c++
+// })
+// $('#time').on('focusout', function(){
+// var regex=/^([0-2])|0[1-9]:[0-5][0-9]$/;
+// let doc= document.getElementById('time').value
+
+// if(doc.match(regex)) 
+// {
+//    // whatever you want it to do now...
+//     return true;
+// }
+// else {
+
+//     alert("Invalid date");
+//     return false;
+// }
+// })
+
+// let m=0;
+// function checkInput () {
+//   const myTabe = document.getElementsByClassName('abbeyscale'),
+//       //tableData = []
+//       _lengthe = myTabe.length;
+
+//   for (let i = 0; i < _lengthe; i++) {
+//       const _valuee = myTabe[i].value,
+//           _innerTexxt = myTabe[i].innerText;
+//       if (_valuee) 
+//         m+=1
+//       else if (_innerTexxt) 
+//       m++
+//   }
+//   if(m===myTabe)
+//   pdfAbbey()
+//   else 
+//   alert("All input fields are mandatory")
+// }
+
+$(document).ready(function() {
+  $('#time').keypress(validateNumber);
+});
+
+function validateNumber(event) {
+  var key = window.event ? event.keyCode : event.which;
+  if (key < 48 || key > 58) {
+    return false;
+  } else {
+    return true;
+  }
+};

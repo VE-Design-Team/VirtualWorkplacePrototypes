@@ -1,8 +1,7 @@
 tableData = []
 newArray = []
 arr = []
-//newTable=[]
-
+//newTable=[]\
 // formcheck=() => {
 
 //     console.log("inside formcheck")

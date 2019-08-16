@@ -41,13 +41,15 @@
 //     }
 //   }
 
-var input = document.getElementById("password");
+if (window.location.href.indexOf('login.html') > -1) {
+let input = document.getElementById("password");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
    event.preventDefault();
    document.getElementById("login").click();
   }
 });
+       }
 
 $('[data-toggle="popover"]').popover()
 

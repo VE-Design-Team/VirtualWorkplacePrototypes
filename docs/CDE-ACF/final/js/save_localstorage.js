@@ -106,7 +106,7 @@ function tableToJson() {
 
     }
 
-    //console.log( tableData );
+    // console.log( tableData );
     // tableData = []
 
 }
@@ -131,4 +131,31 @@ function clearAll () {
 
 // }
 // }
+
+// let item = document.getElementsByClassName("foodrecord")
+// let fcount =item.length
+
+
+function checkInput() {
+    const myTab = document.getElementsByClassName( 'foodrecord' ),
+        _length = myTab.length;
+    
+    for ( let i = 0; i < _length; i++ ) {
+        let _value = myTab[ i ];
+
+        if ( _value.tagName.toLowerCase() === 'input' ) {
+            if ( !_value.value ) return alert( 'Please fill all the fields correctly' );
+        }
+
+        if ( _value.tagName.toLowerCase() === 'select' ) {
+            if ( _value.selectedOptions[ 0 ].textContent.indexOf( 'select' ) !== -1 ) return alert( 'Please fill all the fields correctly' );
+        }
+
+        //tableData.push( _value.value );
+        
+    }
+    pdf();
+    //console.log( tableData );
+
+};
 

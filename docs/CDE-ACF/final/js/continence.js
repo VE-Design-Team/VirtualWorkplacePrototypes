@@ -197,3 +197,26 @@ const pdfContinence = () => {
      clearAll()
 
 }
+
+function checkInputCont() {
+    const myTab = document.getElementsByClassName( 'contrecord' ),
+        _length = myTab.length;
+    
+    for ( let i = 0; i < _length; i++ ) {
+        let _value = myTab[ i ];
+  
+        if ( _value.tagName.toLowerCase() === 'input' ) {
+            if ( !_value.value ) return alert( 'Please fill all the fields correctly' );
+        }
+  
+        if ( _value.tagName.toLowerCase() === 'select' ) {
+            if ( _value.selectedOptions[ 0 ].textContent.indexOf( 'select' ) !== -1 ) return alert( 'Please fill all the fields correctly' );
+        }
+  
+        //tableData.push( _value.value );
+        
+    }
+    pdfContinence();
+    
+  
+  };

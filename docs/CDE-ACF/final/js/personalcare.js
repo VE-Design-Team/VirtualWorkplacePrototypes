@@ -21,7 +21,7 @@ const addRows = () => {
         rowId++;
         let appendData = `<tr id="rowToClone_`+rowId+`">
           <td><input class="personalcare form-control form-control-sm" type="date" placeholder="yyyy/mm/dd" min="1990-01-01" max="2040-12-31" /></td>
-          <td><input class="personalcare form-control form-control-sm" type="time" placeholder="hh:mm" /></td>
+          <td><input class="personalcare form-control form-control-sm" id="time" type="text" pattern="d{1,2}:d{1,2}" maxlength="5" name="time" placeholder="HH:MM" min="00:00" max="23:00" required="required" /></td>
           <td><select class="testselect2 personalcare SlectBox`+rowId+`" multiple=" " name="test[]">
               <option value="Shower">Shower</option>
               <option value="Wash">Wash</option>
@@ -97,3 +97,37 @@ let tableDa = Array();
     doc.save('Personal Care.pdf');
     clearAll()
 }
+
+
+function checkInputPC() {
+  const myTab = document.getElementsByClassName( 'personalcare' ),
+      _length = myTab.length;
+  
+  for ( let i = 0; i < _length; i++ ) {
+      let _value = myTab[ i ];
+
+      if ( _value.tagName.toLowerCase() === 'input' ) {
+          if ( !_value.value ) { return alert( 'Please fill all the fields correctly' );
+            // let err = document.getElementById('error-message') 
+            //  err.innerHTML='Please fill all the fields'
+            //  err.style.display = "block";
+
+            //   setTimeout(() => {
+            //     err.style.display = "none";
+            //   }, 3000);
+
+            //  return false
+          }
+      }
+
+      if ( _value.tagName.toLowerCase() === 'select' ) {
+          if ( _value.selectedOptions[ 0 ].textContent.indexOf( 'select' ) !== -1 ) return alert( 'Please fill all the fields correctly' );
+      }
+
+      //tableData.push( _value.value );
+      
+  }
+  pdfPC();
+  
+
+};

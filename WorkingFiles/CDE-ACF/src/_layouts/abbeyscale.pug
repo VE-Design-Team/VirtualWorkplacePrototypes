@@ -9,7 +9,7 @@
           th.w-20 Date
             i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
         
-          th.w-10 Time
+          th.w-15 Time
             i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the hours or minutes input.')
           th Location
             i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Which area of the resident’s body is the pain located')
@@ -151,7 +151,7 @@
       a.btn.btn.btn-sm.btn-primary.mr-2c(href='patientrecord.html')  Back
       i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
       
-      a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfAbbey()')  Save to PDF
+      a.btn.btn.btn-sm.btn-primary.mr-2(onclick='checkInputAbbey()')  Save to PDF
       i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
           //-a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
           //- input(type='button', onclick='tableToJson()', value='Submit Entries')

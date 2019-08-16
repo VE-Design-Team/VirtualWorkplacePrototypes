@@ -26,7 +26,7 @@
       tbody.continence(role='rowgroup')#tableToModify
         tr(role='row')
           td(role='cell')
-           //- input#continTime.contrecord.form-control(type='text' value=" " disabled)
+            input#continTime.contrecord.form-control(type='text' value=" " disabled)
           td(role='cell')
             input#continDate.contrecord.form-control-sm.form-control(type='date', placeholder='dd/mm/yyyy'
             ,min="1990-01-01", max="2040-12-31")
@@ -858,7 +858,7 @@
 
     a.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
     i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
-    a.btn.btn-sm.btn-primary.mr-2(onclick='pdfContinence()')  Print PDF
+    a.btn.btn-sm.btn-primary.mr-2(onclick='checkInputCont()')  Print PDF
     i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
     //-a.btn.btn-sm.btn-primary(onclick='cont()')  Submit Entries
     //-input.btn.btn-sm.btn-primary.mr-2(type='button', onclick='cont()', value='Submit Entries')

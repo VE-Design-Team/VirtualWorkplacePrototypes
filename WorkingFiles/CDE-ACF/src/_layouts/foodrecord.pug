@@ -2,7 +2,8 @@
   .push.mt-5
   .container.p-5.mb-5.page.rounded-lg
     legend Food and Fluids record 
-    #reset
+    
+    
      table(role='table')#tablePreview.table.table-striped.table-hover
       thead(role='rowgroup')
         tr(role='row')
@@ -56,7 +57,7 @@
             
     a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
     i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
-    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdf()')  Save to PDF
+    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='checkInput()')  Save to PDF
     i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
     //a#submit.btn.btn.btn-sm.btn-primary Submit Entries

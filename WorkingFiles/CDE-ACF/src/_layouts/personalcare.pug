@@ -1,8 +1,9 @@
 .content
   .push.mt-5
   .container.p-5.mb-5.page.rounded-lg
+    #error-message 
     legend Personal Care
-    #reset
+    
      table(role='table')#tablePreview.table.table-striped.table-hover
       thead(role='rowgroup')
         tr(role='row')
@@ -42,7 +43,7 @@
 
     a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
     i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
-    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='pdfPC()') Save to PDF
+    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='checkInputPC()') Save to PDF
     i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
     
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries

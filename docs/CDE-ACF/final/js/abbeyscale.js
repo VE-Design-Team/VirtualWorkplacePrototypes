@@ -402,56 +402,28 @@ const myTab = document.getElementsByClassName('abbeyscale'),
   rowws.push(tableDaata)
 }
 
-// let c=0
- 
-// $('#time').on('focusout', function(){
-//  const regex = /^\d+((:\d+)*|-\d+)?$/;
-// const str =document.getElementById('time');
-// let m;
+function checkInputAbbey() {
+  const myTab = document.getElementsByClassName( 'abbeyscale' ),
+      _length = myTab.length;
+  
+  for ( let i = 0; i < _length; i++ ) {
+      let _value = myTab[ i ];
 
-// if ((m = regex.exec(str)) !== null) {
-//     // The result can be accessed through the `m`-variable.
-//    // m.forEach((match, groupIndex) => {
-//         alert("time field must be in HH:MM format")
-//    // });
-// }
-// else c++
-// })
-// $('#time').on('focusout', function(){
-// var regex=/^([0-2])|0[1-9]:[0-5][0-9]$/;
-// let doc= document.getElementById('time').value
+      if ( _value.tagName.toLowerCase() === 'input' ) {
+          if ( !_value.value ) return alert( 'Please fill all the fields correctly' );
+      }
 
-// if(doc.match(regex)) 
-// {
-//    // whatever you want it to do now...
-//     return true;
-// }
-// else {
+      if ( _value.tagName.toLowerCase() === 'select' ) {
+          if ( _value.selectedOptions[ 0 ].textContent.indexOf( 'select' ) !== -1 ) return alert( 'Please fill all the fields correctly' );
+      }
 
-//     alert("Invalid date");
-//     return false;
-// }
-// })
+      //tableData.push( _value.value );
+      
+  }
+  pdfAbbey();
+  
 
-// let m=0;
-// function checkInput () {
-//   const myTabe = document.getElementsByClassName('abbeyscale'),
-//       //tableData = []
-//       _lengthe = myTabe.length;
-
-//   for (let i = 0; i < _lengthe; i++) {
-//       const _valuee = myTabe[i].value,
-//           _innerTexxt = myTabe[i].innerText;
-//       if (_valuee) 
-//         m+=1
-//       else if (_innerTexxt) 
-//       m++
-//   }
-//   if(m===myTabe)
-//   pdfAbbey()
-//   else 
-//   alert("All input fields are mandatory")
-// }
+};
 
 $(document).ready(function() {
   $('#time').keypress(validateNumber);

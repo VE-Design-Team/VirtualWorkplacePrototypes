@@ -95,6 +95,7 @@ const addRow = () => {
             }
         }
         table.appendChild(clone)
+        
     }
     else {
         alert("Row limit exceeded")

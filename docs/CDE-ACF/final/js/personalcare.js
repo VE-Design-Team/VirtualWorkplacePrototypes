@@ -3,7 +3,7 @@ window.onload = function() {
         $('.testselect2').SumoSelect();
     }
   }
-
+  //$('#exampleModal').modal({ show: false})
 //function to add rows to table in PersonalCarePage
 
 let flag = 1
@@ -107,7 +107,9 @@ function checkInputPC() {
       let _value = myTab[ i ];
 
       if ( _value.tagName.toLowerCase() === 'input' ) {
-          if ( !_value.value ) { return alert( 'Please fill all the fields correctly' );
+          if ( !_value.value ) {  $('#exampleModal').modal('show');
+          return false
+            //alert( 'Please fill all the fields correctly' );
             // let err = document.getElementById('error-message') 
             //  err.innerHTML='Please fill all the fields'
             //  err.style.display = "block";

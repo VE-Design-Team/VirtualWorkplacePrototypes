@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "html2canvas": "^1.0.0-rc.3",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0"
   }
 }

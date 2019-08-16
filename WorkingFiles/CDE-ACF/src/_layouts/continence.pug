@@ -16,13 +16,13 @@
       thead(role='rowgroup')
         tr(role='row')
           th.w-10(role='columnheader') Time
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This column is already filled with times, you don’t have input anything. Just go to the time you want to record information on and work across from them')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='This column is already filled with times, you don’t have input anything. Just go to the time you want to record information on and work across from them')
           th.w-30(role='columnheader') Date
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Select the large triangle to open the calendar and use today’s date.')
           th.w-30(role='columnheader') Date
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Select the large triangle to open the calendar and use today’s date.')
           th.w-30(role='columnheader') Date
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Select the large triangle to open the calendar and use today’s date.')
       tbody.continence(role='rowgroup')#tableToModify
         tr(role='row')
           td(role='cell')
@@ -857,9 +857,20 @@
 
 
     a.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
-    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
-    a.btn.btn-sm.btn-primary.mr-2(onclick='checkInputCont()')  Print PDF
-    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
+    i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='go back to the Patient document page')
+    a.btn.btn-sm.btn-primary.mr-2(onclick='checkInputCont()')  Download to PDF
+    i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Prints the information you recorded into a document')
     //-a.btn.btn-sm.btn-primary(onclick='cont()')  Submit Entries
     //-input.btn.btn-sm.btn-primary.mr-2(type='button', onclick='cont()', value='Submit Entries')
     //-input.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addMoreRow()', value='Add Row')
+#exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Error Message
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Please enter all the fields correctly
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close

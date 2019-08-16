@@ -41,6 +41,17 @@
 //     }
 //   }
 
+var input = document.getElementById("password");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("login").click();
+  }
+});
+
+$('[data-toggle="popover"]').popover()
+
+
 //login form validation
 const login = () => {
     const username = document.getElementById('username').value;

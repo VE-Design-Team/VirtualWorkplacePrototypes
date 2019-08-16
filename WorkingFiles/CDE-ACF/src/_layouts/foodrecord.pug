@@ -8,17 +8,17 @@
       thead(role='rowgroup')
         tr(role='row')
           th.w-15(role='columnheader') Date
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Select the large triangle to open the calendar and use today’s date.')
           th.w-10(role='columnheader') Time
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the hours or minutes input ')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Enter the hours or minutes input (HH:MM) ')
           th(role='columnheader') Food Item
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='List all the food items offered and specify items the resident did not eat.')
+            i.fas.fa-question-circle.btn( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='List all the food items offered and specify items the resident did not eat.')
           th(role='columnheader') Amount Taken
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='The amount eaten of the total amount of food offered')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='The amount eaten of the total amount of food offered')
           th(role='columnheader') Time Taken
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='How long it took to eat the amount of food they finally consumed.')
+            i.fas.fa-question-circle.btn( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='How long it took to eat the amount of food they finally consumed.')
           th(role='columnheader') Role
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This uses your login details to fill automatically ')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='This uses your login details to fill automatically ')
 
       tbody.food#tableToModify
         tr(role='row')#rowToClone
@@ -56,11 +56,24 @@
             input.foodrecord.form-control.form-control-sm(type='text',name='role' value='PCA')     
             
     a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
-    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
-    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='checkInput()')  Save to PDF
-    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
+    i.fas.fa-question-circle.btn.btn-sm(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='go back to the Patient document page')
+    a.btn.btn.btn-sm.btn-primary.mr-2(onclick='checkInput()')  Download to PDF
+    i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Prints the information you recorded into a document')
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
     //a#submit.btn.btn.btn-sm.btn-primary Submit Entries
     //input(type='button', onclick='tableToJson()', value='Submit Entries')
     input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRow()', value='Add Row')
-    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Creates another row if you are recording more than one meal')
+    //- span.d-inline-block(tabindex='0' data-toggle='tooltip' title='Creates another row if you are recording more than one meal')
+    i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Creates another row if you are recording more than one meal")
+#exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Error Message
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Please enter all the fields correctly
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+

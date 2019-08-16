@@ -3,7 +3,7 @@ window.onload = function() {
         $('.testselect2').SumoSelect();
     }
   }
-  //$('#exampleModal').modal({ show: false})
+  $('#exampleModal').modal({ show: false})
 //function to add rows to table in PersonalCarePage
 
 let flag = 1

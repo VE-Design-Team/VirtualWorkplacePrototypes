@@ -7,16 +7,16 @@
       thead
         tr
           th.w-20 Date
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the large triangle to open the calendar and use today’s date.')
+            i.fas.fa-question-circle.btn.btn-sm(data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Select the large triangle to open the calendar and use today’s date.')
         
           th.w-15 Time
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Select the hours or minutes input.')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Enter the hours or minutes input (HH:MM)')
           th Location
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Which area of the resident’s body is the pain located')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Which area of the resident’s body is the pain located')
           th Verbal/Non Verbal
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Is the resident able to speak to assist you with your questions')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Is the resident able to speak to assist you with your questions')
           th.w-30 Comments
-            i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Record any information which may be of assistance')
+            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Record any information which may be of assistance')
           //- th xxxx
           //- th xxxxx
           //- th Role
@@ -144,15 +144,26 @@
     | #[strong Total Pain Score] 
     
     input#total.abbeyscale.form-control-sm(type='text',maxlength='4',size='4',name='total',disabled)
-    i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='This number is automatically generated from the numbers you record above')
+    i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='This number is automatically generated from the numbers you record above')
 
     .row.pt-4.position-inherit.float-right
       
       a.btn.btn.btn-sm.btn-primary.mr-2c(href='patientrecord.html')  Back
-      i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='go back to the Patient document page')
+      i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='go back to the Patient document page')
       
-      a.btn.btn.btn-sm.btn-primary.mr-2(onclick='checkInputAbbey()')  Save to PDF
-      i.fas.fa-question-circle.btn( data-toggle="popover",data-popover-type="singleton",data-placement="top",title='Prints the information you recorded into a document')
+      a.btn.btn.btn-sm.btn-primary.mr-2(onclick='checkInputAbbey()')  Download to PDF
+      i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Prints the information you recorded into a document')
           //-a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
           //- input(type='button', onclick='tableToJson()', value='Submit Entries')
       //- input.btn.btn.btn-sm.btn-primary.mr-2(type='button', onclick='addRowAbbey()', value='Add Row')
+#exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Error Message
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Please enter all the fields correctly
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close

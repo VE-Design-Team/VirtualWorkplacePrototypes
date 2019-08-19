@@ -94,3 +94,16 @@
       .row.p-0.m-0.float-right
         a.btn.btn-primary.float-right(onclick='route()')  Proceed
         //a.btn.btn-primary(href='foodrecord.html')  Add New
+
+
+#messageModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='MessageBoardErrorModal' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#messageModalLabel.modal-title Error Message
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Please read all messages to proceed
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close

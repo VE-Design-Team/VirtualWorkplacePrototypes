@@ -40,6 +40,11 @@
 //       currentDateAndTime();
 //     }
 //   }
+$('#loginModal').modal({ show: false})
+$('#messageModal').modal({ show: false})
+$('#loginErrModal').modal({ show: false})
+$('#detailModal').modal({ show: false})
+
 
 if (window.location.href.indexOf('login.html') > -1) {
 let input = document.getElementById("password");
@@ -60,18 +65,21 @@ const login = () => {
     const password = document.getElementById('password').value;
 
     if (username === '' || password === '')
-        alert("Login credentials cannot be Empty!")
+        //alert("Login credentials cannot be Empty!")
+        $('#loginErrModal').modal('show');
     else if (username === 'PCAstudent' && password === 'C4DE_learn') {
         window.location.href = 'messageboard.html';
     }
     else {
-        alert("Incorrect username or password! ")
+        //alert("Incorrect username or password! ")
+        $('#detailModal').modal('show');
     }
 }
 
 //Function to display LoginInfo
 const loginInfo = () => {
-    alert("Your Username is: 'PCAstudent' \nPassword is:'C4DE_learn'")
+    //alert("Your Username is: 'PCAstudent' \nPassword is:'C4DE_learn'")
+     $('#loginModal').modal('show');
 }
 
 
@@ -84,7 +92,8 @@ route = () => {
     if (document.getElementById("customCheck1").checked && document.getElementById("customCheck2").checked)
         window.location.href = 'patientrecord.html';
     else
-        alert("Please read all messages to proceed")
+        //alert("Please read all messages to proceed")
+        $('#messageModal').modal('show');
 }
 //function to add rows to table in foodrecordPage
 let count = 1

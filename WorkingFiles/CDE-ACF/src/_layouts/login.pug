@@ -31,4 +31,43 @@
                     a#login.btn.w-100.mt-4.btn-primary(onclick='login()')  log in
                     br
                     .col-12.text-center
-                      a(onclick='loginInfo()') Forgot password
+                      a(href= '#' onclick='loginInfo();return false;') Forgot password
+
+
+#loginModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='loginModal' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#loginModalLabel.modal-title Login Details
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Your Username is: 'PCAstudent'
+        br
+        | Password is:'C4DE_learn'"
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+
+#loginErrModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='loginErrorModal' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#loginErrModal.modal-title Login Error
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Login credentials cannot be Empty!
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+
+#detailModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='logincredentialError' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#detailModal.modal-title Login Error
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Incorrect username or password!
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close

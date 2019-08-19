@@ -28,7 +28,7 @@
                     |   
                     .col-12.p-0
                       input#password.form-control.input-md(name='password', type='password',aria-describedby="Password", placeholder='Enter your password',autocomplete='off')
-                    a#login.btn.w-100.mt-4.btn-primary(onclick='login()')  log in
+                    a#login.btn.w-100.mt-4.btn-primary(onclick='login()') Log in
                     br
                     .col-12.text-center
                       a(href= '#' onclick='loginInfo();return false;') Forgot password
@@ -38,7 +38,7 @@
   .modal-dialog(role='document')
     .modal-content
       .modal-header
-        h5#loginModalLabel.modal-title Login Details
+        h5#loginModalLabel.modal-title Login details
         button.close(type='button' data-dismiss='modal' aria-label='Close')
           span(aria-hidden='true') &times;
       .modal-body
@@ -52,11 +52,11 @@
   .modal-dialog(role='document')
     .modal-content
       .modal-header
-        h5#loginErrModal.modal-title Login Error
+        h5#loginErrModal.modal-title Login error
         button.close(type='button' data-dismiss='modal' aria-label='Close')
           span(aria-hidden='true') &times;
       .modal-body
-        | Login credentials cannot be Empty!
+        | Login credentials cannot be empty.
       .modal-footer
         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
 
@@ -64,10 +64,10 @@
   .modal-dialog(role='document')
     .modal-content
       .modal-header
-        h5#detailModal.modal-title Login Error
+        h5#detailModal.modal-title Login error
         button.close(type='button' data-dismiss='modal' aria-label='Close')
           span(aria-hidden='true') &times;
       .modal-body
-        | Incorrect username or password!
+        | Incorrect username or password.
       .modal-footer
         button.btn.btn-secondary(type='button' data-dismiss='modal') Close

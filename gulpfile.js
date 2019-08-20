@@ -81,7 +81,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
   gulp.watch(paths.sass + '/WorkingFiles/CDE-ACF/**/*.scss', ['sass']);
-  gulp.watch('./WorkingFiles/CDE-ACF/src/**/*.pug', ['rebuild']);
+  gulp.watch('./WorkingFiles/CDE-ACF/src/**/*.pug', ['build']);
 });
 
 // Build task compile sass and pug.

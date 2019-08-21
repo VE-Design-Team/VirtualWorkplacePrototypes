@@ -1,3 +1,10 @@
+head  
+  script.
+   if(sessionStorage.getItem('authState')=== 'authenticated'){
+     sessionStorage.removeItem('authState')
+   } else exit()
+
+
 .content.banner-area.p-0
   .row.homepage.m-0.h-100
     .p-0.col-md-6.banner-area.d-none.d-lg-block.d-md-block
@@ -71,3 +78,4 @@
         | Incorrect username or password.
       .modal-footer
         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+

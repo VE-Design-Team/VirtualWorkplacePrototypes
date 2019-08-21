@@ -1,3 +1,10 @@
+head  
+  script.
+   if(sessionStorage.getItem('authState')=== null){
+     window.location.href= "login.html"
+   } else exit()
+
+body
 .content
   .push.mt-5
   .container.p-5.page.rounded-lg

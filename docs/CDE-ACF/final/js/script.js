@@ -44,6 +44,7 @@ $('#loginModal').modal({ show: false})
 $('#messageModal').modal({ show: false})
 $('#loginErrModal').modal({ show: false})
 $('#detailModal').modal({ show: false})
+$('#authModal').modal({ show: false})
 
 
 if (window.location.href.indexOf('login.html') > -1) {
@@ -60,7 +61,7 @@ $('[data-toggle="popover"]').popover()
 
 
 //login form validation
-const login = () => {
+const login  = () => {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
@@ -68,6 +69,7 @@ const login = () => {
         //alert("Login credentials cannot be Empty!")
         $('#loginErrModal').modal('show');
     else if (username === 'PCAstudent' && password === 'C4DE_learn') {
+        sessionStorage.setItem("authState","authenticated")
         window.location.href = 'messageboard.html';
     }
     else {

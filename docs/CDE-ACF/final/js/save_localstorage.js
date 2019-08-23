@@ -96,7 +96,7 @@ function checkInput() {
 
   }
   
-  if(!(window.ActiveXObject) && "ActiveXObject" in window) {
+  if(!(window.ActiveXObject) && "ActiveXObject" in window|| window.navigator.userAgent.indexOf("Edge") > -1) {
     document.getElementsByClassName('container')[0].style.visibility = 'hidden';
     //document.getElementById('back').style.visibility = 'hidden';
 

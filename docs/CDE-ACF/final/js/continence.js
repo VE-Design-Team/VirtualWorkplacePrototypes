@@ -88,7 +88,7 @@ function checkInputCont() {
   for (var i = 0; i < _length; i++) {
     var _value = myTab[i];
 
-    if (_value.tagName.toLowerCase() === 'input') {
+    if (_value.tagName.toLowerCase() === 'input'|| _value.tagName.toLowerCase()==='select') {
       if (!_value.value) return $('#exampleModal').modal('show'); //alert( 'Please fill all the fields correctly' );
     }
 

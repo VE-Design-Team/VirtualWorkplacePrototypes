@@ -104,7 +104,7 @@ function checkInputPC() {
   for (var i = 0; i < _length; i++) {
     var _value = myTab[i];
 
-    if (_value.tagName.toLowerCase() === 'input') {
+    if (_value.tagName.toLowerCase() === 'input'|| _value.tagName.toLowerCase()==='select') {
       if (!_value.value) {
         $('#exampleModal').modal('show');
         return false; //alert( 'Please fill all the fields correctly' );

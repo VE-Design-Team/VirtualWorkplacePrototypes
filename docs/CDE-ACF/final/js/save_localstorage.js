@@ -86,12 +86,12 @@ function checkInput() {
   for (var i = 0; i < _length; i++) {
     var _value = myTab[i];
 
-    if (_value.tagName.toLowerCase() === 'input') {
+    if (_value.tagName.toLowerCase() === 'input' || _value.tagName.toLowerCase()==='select') {
       if (!_value.value) return $('#exampleModal').modal('show'); //alert( 'Please fill all the fields correctly' );
     }
 
-    // if (_value.tagName.toLowerCase() === 'select') {
-    //   if (_value.selectedOptions[0].textContent.indexOf('select') !== -1) return alert('Please fill all the fields correctly');
+    //  if (_value.tagName.toLowerCase() === 'select') {
+    //    if (_value.selectedOptions[0].textContent.indexOf('select') !== -1) return $('#exampleModal').modal('show');
     // } //tableData.push( _value.value );
 
   }

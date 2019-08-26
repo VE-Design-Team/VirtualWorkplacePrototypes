@@ -16,6 +16,10 @@ $('#authModal').modal({
   show: false
 });
 
+$('#rowModal').modal({
+  show: false
+});
+
 $(function() {
   $( ".datepicker" ).datepicker();
   } );
@@ -95,7 +99,7 @@ function addRow() {
 
     table.appendChild(clone);
   } else {
-    alert("Row limit exceeded");
+    $('#rowModal').modal('show');
   }
 };
 

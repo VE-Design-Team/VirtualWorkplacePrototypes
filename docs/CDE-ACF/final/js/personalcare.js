@@ -43,7 +43,7 @@ var addRows = function addRows() {
     }
     $('#tableToModify').append(appendData);
   } else {
-    alert("Row limit exceeded");
+    $('#rowModal').modal('show');
   }
 
   var classs = '.SlectBox' + rowId;

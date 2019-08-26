@@ -71,7 +71,7 @@ head
     a.btn.btn.btn-sm.btn-primary.ml-4( onclick='addRow()') Add row
     //- span.d-inline-block(tabindex='0' data-toggle='tooltip' title='Creates another row if you are recording more than one meal')
     i.fas.fa-question-circle.btn.btn-sm.pb-3( data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Creates another row if you are recording more than one meal")
-#exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+#exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='errorModalLabel' aria-hidden='true')
   .modal-dialog(role='document')
     .modal-content
       .modal-header
@@ -80,6 +80,18 @@ head
           span(aria-hidden='true') &times;
       .modal-body
         | Please enter all the fields correctly
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+
+#rowModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='rowAlertModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#rowModalLabel.modal-title Error message
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Row limit exceeded
       .modal-footer
         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
 

@@ -68,3 +68,15 @@ head
         | Please enter all the fields correctly
       .modal-footer
         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+
+#rowModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='rowAlertModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#rowModalLabel.modal-title Error message
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        | Row limit exceeded
+      .modal-footer
+        button.btn.btn-secondary(type='button' data-dismiss='modal') Close

@@ -14,15 +14,15 @@ head
       thead(role='rowgroup')
         tr(role='row')
           th(role='columnheader') Date
-            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Select the large triangle to open the calendar and use today’s date.')
+            i.fas.fa-question-circle.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Select the large triangle to open the calendar and use today’s date.')
           th(role='columnheader') Time  
-            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Enter the hours or minutes input (HH:MM) ')
+            i.fas.fa-question-circle.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Enter the hours or minutes input (HH:MM) ')
           th(role='columnheader') ADL
-            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Check the Activities of Daily Living performed')
+            i.fas.fa-question-circle.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Check the Activities of Daily Living performed')
           th(role='columnheader') Comments
-            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Include any additional information or changes to the care plan')
+            i.fas.fa-question-circle.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Include any additional information or changes to the care plan')
           th(role='columnheader') Role
-            i.fas.fa-question-circle.btn.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='This uses your login details to fill automatically ')
+            i.fas.fa-question-circle.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='This uses your login details to fill automatically ')
       tbody.personal(role='rowgroup')#tableToModify
         tr(role='row')#rowToClone
           td(role='cell')
@@ -48,14 +48,14 @@ head
             input.personalcare.form-control.form-control-sm(type='text',name='role' value='PCA',disabled)
 
     a.btn.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
-    i.fas.fa-question-circle.btn.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='go back to the Patient document page')
+    i.fas.fa-question-circle.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='go back to the Patient document page')
     a.btn.btn.btn-sm.btn-primary.ml-4(onclick='checkInputPC()') Download to PDF
-    i.fas.fa-question-circle.btn.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Prints the information you recorded into a document')
+    i.fas.fa-question-circle.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Prints the information you recorded into a document')
     
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
     //- input(type='button', onclick='tableToJson()', value='Submit Entries')
     a.btn.btn.btn-sm.btn-primary.ml-4(onclick='addRows()') Add row
-    i.fas.fa-question-circle.btn.btn-sm.pb-3( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Creates another row to record activities you performed at another time')
+    i.fas.fa-question-circle.btn-sm.pb-3( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Creates another row to record activities you performed at another time')
 
 #exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='errorModalLabel' aria-hidden='true')
   .modal-dialog(role='document')

@@ -7,6 +7,8 @@ head
 .content
   .push.mt-5
   .container.p-5.mb-5.page.rounded-lg
+    a.btn-sm(href='patientrecord.html')
+       i.fas.fa-arrow-left.fa-2x
     #error-message 
     legend Personal care
     
@@ -47,9 +49,9 @@ head
           td(role='cell')
             input.personalcare.form-control.form-control-sm(type='text',name='role' value='PCA',disabled)
 
-    a.btn.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
-    i.fas.fa-question-circle.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='go back to the Patient document page')
-    a.btn.btn.btn-sm.btn-primary.ml-4(onclick='checkInputPC()') Download to PDF
+    //- a.btn.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
+    //- i.fas.fa-question-circle.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='go back to the Patient document page')
+    a.btn.btn.btn-sm.btn-primary(onclick='checkInputPC()') Download to PDF
     i.fas.fa-question-circle.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Prints the information you recorded into a document')
     
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries

@@ -7,9 +7,8 @@ head
 .content
   .push.mt-5
   .container.p-5.mb-5.page.rounded-lg
-    //h1= title
-    //p= prev_link
-    //p= next_link
+    a.btn-sm(href='patientrecord.html')
+       i.fas.fa-arrow-left.fa-2x
 
     form.form-horizontal
         fieldset
@@ -861,9 +860,9 @@ head
             textarea.float-right.col-2.contrecord.form-control.form-control-sm(name='story',placeholder='ID',rows=1,cols='16')
 
 
-    a.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
-    i.fas.fa-question-circle.btn-sm.pb-3( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Return to the Patient record menu.')
-    a.btn.btn-sm.btn-primary.ml-3(onclick='checkInputCont()')  Download to PDF
+    //- a.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
+    //- i.fas.fa-question-circle.btn-sm.pb-3( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Return to the Patient record menu.')
+    a.btn.btn-sm.btn-primary(onclick='checkInputCont()')  Download to PDF
     i.fas.fa-question-circle.btn-sm.pb-3( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Prints the information you have recorded into a PDF document')
     //-a.btn.btn-sm.btn-primary(onclick='cont()')  Submit Entries
     //-input.btn.btn-sm.btn-primary.mr-2(type='button', onclick='cont()', value='Submit Entries')

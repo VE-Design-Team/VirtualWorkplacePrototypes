@@ -6,9 +6,12 @@ head
 
 .content
   .push.mt-5
-  .container.p-5.mb-5.page.rounded-lg
-    i.fas.fa-arrow-alt-circle-left.btn
-    br
+  //- a(href='patientrecord.html')
+  //-      i.fas.fa-arrow-left.btn.fa-2x
+  .container.p-5.mb-5.page.rounded-lg 
+    a.btn-sm(href='patientrecord.html')
+       i.fas.fa-arrow-left.fa-2x
+
     legend Food and Fluids record 
     
     
@@ -63,9 +66,9 @@ head
           td(role='cell')
             input.foodrecord.form-control.form-control-sm(type='text',name='role' value='PCA' disabled='')    
             
-    a.btn.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
-    i.fas.fa-question-circle.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Return to the Patient Record menu')
-    a.btn.btn.btn-sm.btn-primary.ml-4(onclick='checkInput()')  Download to PDF
+    //- a.btn.btn.btn-sm.btn-primary(href='patientrecord.html')  Back
+    //- i.fas.fa-question-circle.btn-sm.pb-3(  data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Return to the Patient Record menu')
+    a.btn.btn.btn-sm.btn-primary(onclick='checkInput()')  Download to PDF
     i.fas.fa-question-circle.btn-sm.pb-3( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='Prints the information you recorded into a document')
     //a#submit.btn.btn.btn-sm.btn-primary(href='foodrecord.html')  Submit Entries
     //a#submit.btn.btn.btn-sm.btn-primary Submit Entries

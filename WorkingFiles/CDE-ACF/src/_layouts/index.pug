@@ -4,7 +4,13 @@
 
 //- h1 Welcome to Scottish Thistle Aged Care Facility
 //- a.btn.btn-primary(href="login.html") Continue to login  
-
+head  
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-146700922-1')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-146700922-1');
 .row.p-2.mb-5.ml-0.mr-0.header.position-absolute.w-100 
   .container 
     img.logo(src='img/logo_white.png' alt="Bagwan Aged Care Facility")

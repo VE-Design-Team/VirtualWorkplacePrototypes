@@ -233,6 +233,10 @@ body {
         td:nth-of-type(5):before {
             content: "Role";
         }
+        .SumoSelect {
+            display: block;
+            width: 100%;
+        }
     }
     tbody.message {
         td {

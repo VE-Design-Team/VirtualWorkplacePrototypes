@@ -7,9 +7,7 @@ head
 .content
   .push.mt-5
   .container.p-5.mb-5.page.rounded-lg
-    a.btn.btn-sm.btn-primary(href='patientrecord.html')
-       i.fas.fa-arrow-left
-       | Back
+ 
     legend  Pain - Abbey scale
     #reset
      table#tablePreviewAbbey.table.table-striped.table-hover
@@ -172,8 +170,10 @@ head
     i.fas.fa-question-circle.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='This number is automatically generated from the numbers you record above')
 
     .row.pt-4.position-inherit.float-none
-      
-      //- a.btn.btn.btn-sm.btn-primary.mr-2c(href='patientrecord.html')  Back
+      a.btn.btn-sm.btn-primary.mr-3(href='patientrecord.html')
+        i.fas.fa-arrow-left
+        |  Back
+      //- a.btn.btn.btn-sm.btn-primary.mr-2(href='patientrecord.html')  Back
       //- i.fas.fa-question-circle.btn-sm( data-container="body" data-toggle="popover",data-trigger="hover",data-placement="top",data-content='go back to the Patient document page')
       
       a.btn.btn.btn-sm.btn-primary.mr-2(onclick='checkInputAbbey()')  Download to PDF

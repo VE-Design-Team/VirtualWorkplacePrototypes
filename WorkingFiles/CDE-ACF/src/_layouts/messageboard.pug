@@ -8,36 +8,26 @@ body
 .content
   .push.mt-5
   .container.p-5.page.rounded-lg
-    .row
-      h3.pb-2 Messageboard
+    .row.no-gutters
+      .col-12
+        h3 Messageboard
+      
       //- .form-group.row
       //-   label.col-2.col-form-label(for='example-datetime-local-input') From date
       //-   .col-10
       //-     input#example-datetime-local-input.form-control(type='datetime-local', value='2011-08-19T13:45:00')
-      form.form-inline.pb-4
-        label.pr-2(for='inlineFormInput') From date:
-         input#inlineFormInput.form-control.mb-2.mr-sm-2.ml-sm-2(type='text' disabled="")
-        label(for='inlineFormInputGroup') To date:
-        .mb-2.mr-sm-2.mb-sm-0
-          .input-group-addon
-          input#inlineFormInputGroup.form-control.mr-sm-2.ml-sm-2.mb-2(type='text' disabled="")
-          button.btn.btn-secondary.mb-2(type='submit') Submit
-        input#inlineRadio1.form-check-input(type='radio', name='inlineRadioOptions', value='option1')
-        .input_inline
-          |  All
-        input#inlineRadio2.form-check-input(type='radio', name='inlineRadioOptions', value='option2')
-        .input_inline
-          |  Roles
-        input#inlineRadio3.form-check-input(type='radio', name='inlineRadioOptions', value='option3')
-        .input_inline
-          |  Individuals
-        input#inlineCheckbox1.form-check-input(type='checkbox', value='option1')
-        .input_inline
-          |  Unread only
-      //- a.btn.btn-primary(href='#') New
-      //- a.btn.btn-primary(href='#') Mark all as read
-      br
-      br
+      .col-12
+        
+        form.form-inline.float-right.row
+          .col-6
+            label.sm(for='inlineFormInput') From date:
+            input#inlineFormInput.form-control.mb-2.mr-sm-2.ml-sm-2.form-control-sm(type='text' disabled="")
+          .col-6
+            label.sm(for='inlineFormInputGroup') To date:
+            input#inlineFormInputGroup.form-control.mr-sm-2.ml-sm-2.mb-2.form-control-sm(type='text' disabled="")
+          
+        
+      
       .row.ml-0.mr-0.mt-0.mb-4.shadow.bg-white.rounded-lg.p-0.col-12
         // Table
         table(role='table')#tablePreview.table.table-striped.table-hover.mb-0
@@ -54,8 +44,6 @@ body
           // Table body
           tbody.message(role='rowgroup')
             tr.accordion-toggle(data-toggle='collapse',aria-expanded="true", data-target='#demo1',onclick='messageOne()')
-
-
               td.custom-control.custom-checkbox.mx-0.text-center
                 input#customCheck1.custom-control-input.position-relative(type='checkbox')
                 label.custom-control-label(for='customCheck1')

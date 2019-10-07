@@ -1,0 +1,95 @@
+body {
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size: 13px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.container {
+    height: 100vh;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    padding: 0 1em 0 0;
+}
+
+.logo {
+    display: flex;
+    background-image: url(../images/logo.png);
+    height: 5em;
+    width: 20em;
+}
+.contents {
+    display: flex;
+    padding: 1em;
+}
+.categories {
+    flex: 20;
+    border-right: 1px solid #d8c8c8;
+}
+.files {
+    flex: 80;
+    padding: 2em 5em;
+}
+.favorites::before {
+    content:"\2605";
+    color: #158882;
+    font-size: 2em;
+    margin-right: 1em;
+    display: inline-block;
+}
+.recent::before {
+    content:"\1F551";
+    color: #158882;
+    font-size: 1.1em;
+    margin-right: 2em;
+    display: inline-block;
+}
+.shared::before{
+    content:"\2605";
+    color: #158882;
+    font-size: 2em;
+    margin-right: 1em;
+    display: inline-block;
+}
+.list-title {
+    font-size: 2em;
+}
+.list-header,
+.list-item {
+    display: flex;
+}
+.file-name {
+    flex: 1 1;
+}
+.file-date {
+    flex: 1 1;
+}
+.file-type {
+    flex: 1 1;
+}
+
+.list-header  {
+    border-bottom: 1px solid #d8c8c8;
+}
+.list-header .file-date,
+.list-header .file-name,
+.list-header .file-type  {
+    border-right:  1px solid #d8c8c8;
+    padding-left: .3em;
+}
+.list-contents {
+    padding: 1em;
+}
+.list-contents .file-name {
+    padding: 1em 0;
+    display: inline-block;
+}

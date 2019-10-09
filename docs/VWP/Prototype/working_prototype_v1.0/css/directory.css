@@ -28,40 +28,71 @@ html, body {
   height: 5.25em;
   width: 21em;
 }
+
 .contact-cards {
   padding: 0 8em;
-
   background: #ece8e8;
 }
+
 .cards-container {
   display: flex;
   overflow-x: auto;
   justify-content: stretch;
+  padding-bottom: 1em;
 }
 
 .card {
   flex: 0 0 11em;
-  margin: 0 1em;
+  margin: 0 2em 0 0;
 }
-.card img{
-display: flex;
-height: 8em;
+
+.card img {
+  display: flex;
+  height: 8em;
 }
+
 .contact-info {
   background: #ffffff;
   text-align: center;
 }
+
 .contact-info p {
   margin: .1em;
 }
+
 .contact-info p button {
   margin: .1em;
   background: grey;
   color: #ffffff;
   border: none;
 }
+
 .contact-hierarchy {
   background-image: url(organization.png);
   height: 50vh;
   background-repeat: no-repeat;
 }
+
+/* scrollbar styling for webkit browsers */
+
+.cards-container::-webkit-scrollbar {
+  background-color: #fff;
+  height: 5px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+  background-color: #158882;
+}
+
+/* scrollbar styling for firefox */
+.container {
+  scrollbar-color:#fff #158882;
+  scrollbar-width: thin;
+}
+
+
+

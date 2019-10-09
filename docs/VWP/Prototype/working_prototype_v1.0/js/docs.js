@@ -3,31 +3,31 @@ function init() {
     const docs = [
         {
             "fileName": "test.pdf",
-            "downloadLink" : "./docs_repo/test.pdf",
+            "downloadLink" : "./docs/test.pdf",
             "date": "26/11/2018",
             "type": "PDF File"
         },
         {
             "fileName": "general.doc",
-            "downloadLink" : "./docs_repo/general.doc",
+            "downloadLink" : "./docs/general.doc",
             "date": "04/01/2019",
             "type": "Microsoft Word"
         },
         {
             "fileName": "guide.pdf",
-            "downloadLink" : "./docs_repo/guide.pdf",
+            "downloadLink" : "./docs/guide.pdf",
             "date": "16/02/2019",
             "type": "PDF File"
         },
         {
             "fileName": "FAQs.doc",
-            "downloadLink" : "./docs_repo/FAQs.doc",
+            "downloadLink" : "./docs/FAQs.doc",
             "date": "12/06/2009",
             "type": "Microsoft Word"
         },
         {
             "fileName": "holidays.pdf",
-            "downloadLink" : "./docs_repo/holidays.pdf",
+            "downloadLink" : "./docs/FAQs.doc",
             "date": "12/06/2009",
             "type": "PDF File"
         }

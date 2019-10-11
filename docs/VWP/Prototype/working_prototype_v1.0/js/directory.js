@@ -54,6 +54,36 @@ function init () {
     "designation": "Director of nursing",
     "department": "CEO",
     "lead": ""
+  },
+  "Employee 11": {
+    "name": "Employee 10",
+    "designation": "Director of nursing",
+    "department": "CEO",
+    "lead": ""
+  },
+  "Employee 12": {
+    "name": "Employee 10",
+    "designation": "Director of nursing",
+    "department": "CEO",
+    "lead": ""
+  },
+  "Employee 13": {
+    "name": "Employee 10",
+    "designation": "Director of nursing",
+    "department": "CEO",
+    "lead": ""
+  },
+  "Employee 14": {
+    "name": "Employee 10",
+    "designation": "Director of nursing",
+    "department": "CEO",
+    "lead": ""
+  },
+  "Employee 15": {
+    "name": "Employee 10",
+    "designation": "Director of nursing",
+    "department": "CEO",
+    "lead": ""
   }
 }
 function createContactCards() {

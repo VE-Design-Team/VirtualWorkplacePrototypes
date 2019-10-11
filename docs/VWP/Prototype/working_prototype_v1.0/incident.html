@@ -11,38 +11,38 @@
     <link rel="stylesheet" href="./css/incident.css?v=1.0">
 </head>
 
-<body style="background:#F0F0F0;">
-    <section style="background-color: white;" class="header">
+<body>
+    <section class="header">
         <span class='logo'></span>
-
     </section>
     <section class="question-section">
         <h3>Report an incident or accident</h3>
+        <form>
         <div id="set1" class="question-set">
             <h4>Determine the type of incident</h4>
             <div class="questions">
                 <p>Were multiple incident types involved?</p>
                 <div>
-                    <input type="radio" id="choice1" name="incidentNum" value="yes">
+                    <input type="radio" id="choice1" name="Were multiple incident types involved?" value="yes">
                     <label for="choice1">Yes</label>
 
-                    <input type="radio" id="choice2" name="incidentNum" value="no">
+                    <input type="radio" id="choice2" name="Were multiple incident types involved?" value="no">
                     <label for="choice1">No</label>
                 </div>
             </div>
             <div class="questions">
                 <p>Select the most severely impacted incident type</p>
                 <div>
-                    <input type="radio" id="incType1" name="incidentNum" value="People">
+                    <input type="radio" id="incType1" name="Impact Type" value="People">
                     <label for="incType1">People</label>
 
-                    <input type="radio" id="incType2" name="incidentNum" value="Assets">
+                    <input type="radio" id="incType2" name="Impact Type" value="Assets">
                     <label for="incType2">Assets</label>
 
-                    <input type="radio" id="incType3" name="incidentNum" value="Environment">
+                    <input type="radio" id="incType3" name="Impact Type" value="Environment">
                     <label for="incType3">Environment</label>
 
-                    <input type="radio" id="incType4" name="incidentNum" value="Security">
+                    <input type="radio" id="incType4" name="Impact Type" value="Security">
                     <label for="incType4">Security</label>
                 </div>
 
@@ -53,10 +53,10 @@
             <h4>Who sustained this incident?</h4>
             <div class="questions">
                 <div>
-                    <input type="radio" id="choice1" name="incidentNum" value="Me">
+                    <input type="radio" id="choice1" name="Who sustained this incident?" value="Me">
                     <label for="choice1">Me</label>
 
-                    <input type="radio" id="choice2" name="incidentNum" value="Another Person">
+                    <input type="radio" id="choice2" name="Who sustained this incident?" value="Another Person">
                     <label for="choice2">Another Person</label>
                 </div>
             </div>
@@ -66,17 +66,17 @@
             <div class="questions">
                 <div class="q-location">
                     <label for="incDate">Start date:</label>
-                    <input type="date" id="incDate" name="inc-date" value="2018-07-22" min="2018-01-01"
+                    <input type="date" id="incDate" name="Date of Incident" min="2018-01-01"
                         max="2020-12-31">
                 </div>
                 <div class="q-location">
                     <label for="incTime">Time:</label>
-                    <input type="time" id="incTime" name="appt">
+                    <input type="time" id="incTime" name="Time of Incident">
                 </div>
                 <div class="q-location">
-                    <label for="categories">Time Category:</label>
+                    <label for="categories">Incident Category:</label>
 
-                    <select name="inccategory" id="categories">
+                    <select name="Category of the incident" id="categories">
                         <option value="">--Select time category--</option>
                         <option value="Approved recess">Approved Recess(eg. lunch)</option>
                         <option value="Domestic travel">Domestic travel</option>
@@ -92,7 +92,7 @@
             <div class="questions">
                 <label for="location">Select location:</label>
 
-                <select name="inccategory" id="categories">
+                <select name="Location" id="location">
                     <option value="">--Select location of incident--</option>
                     <option value="Location 1">Location 1</option>
                     <option value="Location 2">Location 2</option>
@@ -102,16 +102,17 @@
 
                 <label class="loc-label" for="locationDetails">Location Details:</label>
 
-                <textarea class="loc-input" id="locationDetails" name="story"></textarea>
-                <label class="loc-label" for="incDetails">Describe the imcident in as mch details as possible:</label>
+                <textarea class="loc-input" id="locationDetails" name="Location Details"></textarea>
+                <label class="loc-label" for="incDetails"></label>
 
-                <textarea class="loc-input" id="incDetails" name="incDetails"></textarea>
+                <textarea class="loc-input" id="incDetails" name="Describe the incident in as much details as possible:"></textarea>
             </div>
         </div>
 
         <div class="submit-inc">
                 <a class="submit-btn" id="submitIncident" >Submit</a>
         </div>
+    </form>
     </section>
     <script src="./js/incident.js"></script>
 </body>

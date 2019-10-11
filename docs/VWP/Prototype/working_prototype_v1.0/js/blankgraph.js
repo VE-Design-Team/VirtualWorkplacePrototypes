@@ -200,7 +200,7 @@ OrgChart.prototype.load = function(t) {
         OrgChart.events.publish("ready", [b, t])
     })
 }, OrgChart.prototype._setInitialSizeIfNotSet = function() {
-    this.element.style.overflow = "hidden", this.element.style.position = "relative", 0 == this.element.offsetHeight && (this.element.style.height = "100%", 0 == this.element.offsetHeight && (this.element.style.height = "500px")), 0 == this.element.offsetWidth && (this.element.style.width = "100%", 0 == this.element.offsetWidth && (this.element.style.width = "700px"))
+    this.element.style.overflow = "hidden", this.element.style.position = "relative", 0 == this.element.offsetHeight && (this.element.style.height = "100%", 0 == this.element.offsetHeight && (this.element.style.height = "650px")), 0 == this.element.offsetWidth && (this.element.style.width = "100%", 0 == this.element.offsetWidth && (this.element.style.width = "700px"))
 }, OrgChart.prototype.getViewBox = function() {
     var t = this.getSvg(),
         e = null;

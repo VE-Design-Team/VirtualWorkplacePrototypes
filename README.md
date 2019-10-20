@@ -45,6 +45,7 @@ Please make sure to update tests as appropriate.
 * Jack Dunstan
 * Lawrence Makoona
 * Gordon Napier
+* Anirudh Mana
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

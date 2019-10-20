@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bagwan Resources List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/docs.css?v=1.0">
+  <link rel="stylesheet" href="./css/intranet.css?v=1.0">
+</head>
+<body>
+
+  <section style="background-color: white; height: 70%;" class="header">
+      <span class='logo'></span>
+
+  </section>
+
+<div class="container" style="background-color:#DCDCDC; height:auto; margin-top:5%; border: 1px solid; padding: 10px;box-shadow: 5px 10px #081f3c;">
+  <h2>Bagwan - Resource List</h2>
+  <p>Type something in the input field to search the table for <span style="font-weight:bold;">resource no, names or links</span></p>
+  <p>&nbsp</p>
+  <input class="form-control" id="myInput" type="text" placeholder="Search any resource from the below list...">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Resource No</th>
+        <th>Resource Name</th>
+        <th>Resource Desription</th>
+        <th>Unit of Competency</th>
+        <th>Resource Location</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>VR Room 1</td>
+        <td>Clinic</td>
+        <td>Sample description</td>
+        <td>employability skills 1</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+      <tr>
+        <td>VR Room 2</td>
+        <td>Laboratory</td>
+        <td>Sample description</td>
+        <td>employability skills 2</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+      <tr>
+        <td>VR Room 3</td>
+        <td>Nurses station</td>
+        <td>Sample description</td>
+        <td>employability skills 3</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test<a/></td>
+      </tr>
+      <tr>
+        <td>VR Room 4</td>
+        <td>Reception</td>
+        <td>Sample description</td>
+        <td>employability skills 4</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+      <tr>
+        <td>VR Room 5</td>
+        <td>Nurses station</td>
+        <td>Sample description</td>
+        <td>employability skills 5</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+      <tr>
+        <td>VR Room 6</td>
+        <td>Intranet Simulation</td>
+        <td>Sample description</td>
+        <td>employability skills 6</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+      <tr>
+        <td>VR Room 7</td>
+        <td>Incident Management</td>
+        <td>Sample description</td>
+        <td>employability skills 7</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+      <tr>
+        <td>VR Room 8</td>
+        <td>Knowledge Base</td>
+        <td>Sample description</td>
+        <td>employability skills 8</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+      <tr>
+        <td>VR Room 9</td>
+        <td>Home page</td>
+        <td>Sample description</td>
+        <td>employability skills 9</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+      <tr>
+        <td>VR Room 10</td>
+        <td>Document repo</td>
+        <td>Sample description</td>
+        <td>employability skills 10</td>
+        <td><a href="https://rmit.instructure.com/courses/64236/pages/virutal-wp-test">https://rmit.instructure.com/courses/64236/pages/virutal-wp-test</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><span style="font-weight:bold;">Note:</span> These resources are only available to teachers</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+<div class="footer" style="height: 8%;">
+<p>&nbsp</p>
+    <p>© Bagwan Health</p>
+
+</div>
+</html>

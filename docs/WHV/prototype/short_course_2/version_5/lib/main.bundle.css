@@ -47,10 +47,16 @@
   .block-flashcard  {
       transform: scale(.9) translateZ(0) !important;
       will-change: auto !important;
-      font-size: 2.5rem !important;
+      font-size: 3rem !important;
       line-height: 3rem !important;
 
     }
+
+    .block-flashcard__center--long .block-flashcard__description  {
+      font-size: 3rem !important;
+    }
+
+
 
 /*!
  * froala_editor v2.9.5 (https://www.froala.com/wysiwyg-editor)

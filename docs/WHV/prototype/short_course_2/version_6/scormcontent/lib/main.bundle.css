@@ -35,6 +35,31 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2019 Froala Labs
  */body.fr-fullscreen{overflow:hidden;height:100%;width:100%;position:fixed}.fr-box.fr-fullscreen{margin:0!important;position:fixed;top:0;left:0;bottom:0;right:0;z-index:2147483630!important;width:auto!important}.fr-box.fr-fullscreen .fr-toolbar.fr-top{top:0!important}.fr-box.fr-fullscreen .fr-toolbar.fr-bottom{bottom:0!important}.fr-fullscreen-wrapper{z-index:2147483640!important;width:100%!important;margin:0!important;padding:0!important;overflow:visible!important}
+ .overview__logo img
+   {
+     width: 150px !important;
+     height: auto;
+   }
+  .fr-view p
+  {
+    line-height: 2.5rem;
+  }
+  .block-flashcard  {
+      transform: scale(.9) translateZ(0) !important;
+      will-change: auto !important;
+      font-size: 3rem !important;
+      line-height: 3rem !important;
+
+    }
+
+    .block-flashcard__center--long .block-flashcard__description  {
+      font-size: 3rem !important;
+    }
+
+
+
+
+
 /*!
  * froala_editor v2.9.5 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/

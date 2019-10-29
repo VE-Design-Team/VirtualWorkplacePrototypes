@@ -194,6 +194,7 @@ h3 a {
 #banner-splash {
   height: 72px;
   position: initial;
+  margin-bottom: 20px;
   width: 100%; }
   #banner-splash #ws {
     margin: 0 auto;
@@ -202,10 +203,21 @@ h3 a {
     width: 320px; }
     #banner-splash #ws .whm-logo {
       background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
-      height: 48px;
-      margin: 12px;
+      height: 100%;
+      width: 320px;
+      margin-bottom: 20px;
       background-size: contain;
       background-repeat: no-repeat; }
+
+.whm-cc {
+  background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/cc.png");
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+  position: initial;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 #banner {
   height: 72px;
@@ -1151,6 +1163,15 @@ label {
   position: fixed;
   z-index: 999;
   bottom: 0; }
+
+/*Splash page*/
+#splash-info {
+  max-width: 320px !important; }
+
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  max-width: 320px; }
 
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)

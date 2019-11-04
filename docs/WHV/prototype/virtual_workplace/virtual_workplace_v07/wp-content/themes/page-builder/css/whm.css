@@ -203,7 +203,7 @@ h3 a {
     width: 320px;
     max-width: 100%; }
     #banner-splash #ws .whm-logo {
-      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
+      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
       height: 100%;
       width: 320px;
       max-width: 100%;
@@ -212,7 +212,7 @@ h3 a {
       background-repeat: no-repeat; }
 
 .whm-cc {
-  background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/cc.png");
+  background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/cc.png");
   width: 150px;
   height: 100px;
   max-width: 100%;
@@ -234,7 +234,7 @@ h3 a {
     float: left;
     width: 320px; }
     #banner #ws .whm-logo {
-      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
+      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
       height: 48px;
       margin: 12px;
       background-size: contain;
@@ -269,7 +269,7 @@ h3 a {
     float: left; }
     #breadcrumbs #ws .fssi-logo {
       margin: 0;
-      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
+      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
       height: 48px;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -320,9 +320,9 @@ h3 a {
       border: none;
       z-index: 400; }
     #breadcrumbs #access .btn-fs {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/svg/fullscreen.svg"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/svg/fullscreen.svg"); }
     #breadcrumbs #access .btn-menu {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/svg/hamburger.svg"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/svg/hamburger.svg"); }
 
 #ribbon {
   min-height: 100px;
@@ -425,7 +425,7 @@ h3 a {
       margin-bottom: 1rem; }
       #flipcards .card .middler button {
         background: none;
-        background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/flipme_icon.png");
+        background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/flipme_icon.png");
         background-size: contain;
         color: rgba(0, 0, 0, 0);
         background-position: center;
@@ -495,30 +495,30 @@ h3 a {
       #introtabs #tabs ul.nav li.nav-item a.nav-link.active {
         padding: 0; }
     #introtabs #tabs ul.nav li.nav-item:nth-child(1) a {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/learning_objectives_inverse.png");
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/learning_objectives_inverse.png");
       background-repeat: no-repeat;
       background-position: center; }
     #introtabs #tabs ul.nav li.nav-item:nth-child(1) a.active {
       background-color: #01A19A;
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/learning_objectives.png"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/learning_objectives.png"); }
     #introtabs #tabs ul.nav li.nav-item:nth-child(2) a {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/key_activities_inverse.png");
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/key_activities_inverse.png");
       background-repeat: no-repeat;
       background-position: center; }
       #introtabs #tabs ul.nav li.nav-item:nth-child(2) a .title {
         padding-top: 1.25rem; }
     #introtabs #tabs ul.nav li.nav-item:nth-child(2) a.active {
       background-color: #01A19A;
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/key_activities.png"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/key_activities.png"); }
     #introtabs #tabs ul.nav li.nav-item:nth-child(3) a {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/assessments_inverse.png");
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/assessments_inverse.png");
       background-repeat: no-repeat;
       background-position: center; }
       #introtabs #tabs ul.nav li.nav-item:nth-child(3) a .title {
         padding-top: 1.25rem; }
     #introtabs #tabs ul.nav li.nav-item:nth-child(3) a.active {
       background-color: #01A19A;
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/whm/img/theme/assessments.png"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/whm/img/theme/assessments.png"); }
   #introtabs #tabs .tab-content {
     border: none;
     padding: 0;
@@ -7131,8 +7131,8 @@ a.skip-link {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/fonts/fontawesome-webfont.eot#iefix&v=4.7.0") format("embedded-opentype"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/fonts/fontawesome-webfont.eot#iefix&v=4.7.0") format("embedded-opentype"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -10460,7 +10460,7 @@ abbr.glossarizer_replaced {
     padding-top: 10rem; }
 
 #sampledoc .tear {
-  background-image: url(https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v05/wp-content/themes/page-builder/css/img/tear.png);
+  background-image: url(https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v07/wp-content/themes/page-builder/css/img/tear.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: auto 100%;

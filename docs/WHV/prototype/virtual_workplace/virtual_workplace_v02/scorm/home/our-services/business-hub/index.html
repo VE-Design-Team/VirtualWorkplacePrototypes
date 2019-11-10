@@ -6,6 +6,7 @@
     <script src="https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v02/wp-content/themes/page-builder/js/jquery.min.js"></script>
     <script src="https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v02/wp-content/themes/page-builder/js/classie.js"></script>
 </head>
+
 <body class="cbp-spmenu-push cbp-spmenu-push">
 
   <div id="showRightPush" class="">
@@ -316,7 +317,7 @@ $(function () {
 
 <a class="float-left" title="Previous page" href="https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v02/scorm/home/our-program/arts-education/"><strong>Previous page:</strong> Arts education</a>
 
-<a class="float-right" title="Next page" href="https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v02/scorm/home/our-services/recruitment-service/"><strong>Next page:</strong> Recruitment service</a>
+<a class="float-right" title="Next page" href="./index.html"><strong>Next page:</strong> Recruitment service</a>
 
 
             </div>
@@ -379,6 +380,7 @@ $(function () {
  </script>
 
 <script>
+  
    //nave menu
    $(document).ready(function () {
        $('#sidebarCollapse').on('click', function () {
@@ -399,11 +401,13 @@ $(function () {
              docElm.requestFullscreen();
          } else if (docElm.mozRequestFullScreen) {
              docElm.mozRequestFullScreen();
-         } else if (docElm.webkitRequestFullScreen) {
+         } else if (docElm.webkitRequestFullScreen) { 
              docElm.webkitRequestFullScreen();
          } else if (docElm.msRequestFullscreen) {
              docElm.msRequestFullscreen();
          }
+       
+
      } else {
          if (document.exitFullscreen) {
              document.exitFullscreen();
@@ -415,6 +419,9 @@ $(function () {
              document.msExitFullscreen();
          }
      }
+    
+  
+    
  }
 </script>
 

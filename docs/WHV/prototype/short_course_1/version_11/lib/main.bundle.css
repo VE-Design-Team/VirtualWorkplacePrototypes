@@ -70,9 +70,17 @@
         display: none;
     }
 
-    .quiz-match__item-feedback-bubble{
-      display: none;
-    }
+    .quiz-match__item-feedback-bubble {
+        display: none !important;}
+
+
+.quiz-multiple-choice-option--correct .i-checkMark {
+  display: none !important;
+}
+
+.i-exMark{
+  display: none !important;
+}
     /*!
  * froala_editor v2.9.5 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/

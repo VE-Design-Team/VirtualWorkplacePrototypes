@@ -69,6 +69,10 @@
 
         display: none;
     }
+
+    .quiz-match__item-feedback-bubble{
+      display: none;
+    }
     /*!
  * froala_editor v2.9.5 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/

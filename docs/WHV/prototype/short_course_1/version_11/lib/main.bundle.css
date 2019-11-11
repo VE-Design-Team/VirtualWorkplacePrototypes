@@ -60,25 +60,25 @@
     vertical-align: text-bottom !important;}
 
 
-    .quiz-multiple-choice-option--incorrect .icon-close-media-panel {
+    .quiz .quiz-multiple-choice-option--incorrect .icon-close-media-panel {
 
         display: none;
     }
 
-    .quiz-multiple-choice-option--correct .icon-tick {
+  .quiz  .quiz-multiple-choice-option--correct .icon-tick {
 
         display: none;
     }
 
-    .quiz-match__item-feedback-bubble {
+  .quiz  .quiz-match__item-feedback-bubble {
         display: none !important;}
 
 
-.quiz-multiple-choice-option--correct .i-checkMark {
+.quiz .quiz-multiple-choice-option--correct .i-checkMark {
   display: none !important;
 }
 
-.i-exMark{
+.quiz .i-exMark{
   display: none !important;
 }
     /*!

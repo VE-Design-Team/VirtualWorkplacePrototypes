@@ -154,6 +154,13 @@ h3 a {
   font-size: 14px;
   color: #01A19A; }
 
+.social-right {
+  float: right;
+  padding-left: .4rem; }
+
+.social-left {
+  float: left; }
+
 .social-replies {
   border-left: 2px solid;
   border-color: #01A19A;

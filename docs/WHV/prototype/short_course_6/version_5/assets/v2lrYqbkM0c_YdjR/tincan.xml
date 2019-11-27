@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://5jP2tko60Oe_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">Drag-1</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/6lzctvkxkJh" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Progress toward gender and disability equality</name>
+			<description lang="und">Progress toward gender and disability equality</description>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/6lzctvkxkJh/6aBoDY51m81" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6LzX3ZmTaAV[.]choice_6jKgHQDg8z5</correctResponsePattern>
+				<correctResponsePattern>statement_6GP7QQR2GEU[.]choice_6j0X5fLSiZX</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6LzX3ZmTaAV</id>
+					<description lang="und">1918 box - Group</description>
+				</component>
+				<component>
+					<id>statement_6GP7QQR2GEU</id>
+					<description lang="und">1960s box - Group</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_6jKgHQDg8z5</id>
+					<description lang="und">1918 - answer 1 1 1 - Group 1</description>
+				</component>
+				<component>
+					<id>choice_6j0X5fLSiZX</id>
+					<description lang="und">1960s - answer 1 1 1 - Group</description>
+				</component>
+			</target>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/6hfa9F1knuW" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Progress toward gender and disability equality</name>
+			<description lang="und">Progress toward gender and disability equality</description>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/6D2xEG9htBC" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Progress toward gender and disability equality</name>
+			<description lang="und">Progress toward gender and disability equality</description>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/6D2xEG9htBC/6fEIVXbn7Gq" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6NL45j7BJl8[.]choice_5rsNyIubcAN</correctResponsePattern>
+				<correctResponsePattern>statement_6I4I9QmtJue[.]choice_5ce7DcWk2gU</correctResponsePattern>
+				<correctResponsePattern>statement_5kKboXJU3D4[.]choice_5XJAlrM0GpZ</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6NL45j7BJl8</id>
+					<description lang="und">1970 box - Group</description>
+				</component>
+				<component>
+					<id>statement_6I4I9QmtJue</id>
+					<description lang="und">1980 box - Group</description>
+				</component>
+				<component>
+					<id>statement_5kKboXJU3D4</id>
+					<description lang="und">1992 - Box - Group</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_5rsNyIubcAN</id>
+					<description lang="und">1970 - answer - Group</description>
+				</component>
+				<component>
+					<id>choice_5ce7DcWk2gU</id>
+					<description lang="und">1980 - answer 1 - Group</description>
+				</component>
+				<component>
+					<id>choice_5XJAlrM0GpZ</id>
+					<description lang="und">1992 - answer 1 - Group</description>
+				</component>
+			</target>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/5nnxyBMoQi9" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Progress toward gender and disability equality</name>
+			<description lang="und">Progress toward gender and disability equality</description>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/5nnxyBMoQi9/6DjHAVdkLKb" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/5tkSuDYDITc" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Progress toward gender and disability equality</name>
+			<description lang="und">Progress toward gender and disability equality</description>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/5tkSuDYDITc/6nIcnsO7iUf" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6HPYEbLtebc[.]choice_65Fk7bjGS4i</correctResponsePattern>
+				<correctResponsePattern>statement_5bE5Ik5imxw[.]choice_6H3pwxIev5y</correctResponsePattern>
+				<correctResponsePattern>statement_5ydVi46VbYB[.]choice_6pjT8umRSQw</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6HPYEbLtebc</id>
+					<description lang="und">2006 box - Group</description>
+				</component>
+				<component>
+					<id>statement_5bE5Ik5imxw</id>
+					<description lang="und">2013 box - Group</description>
+				</component>
+				<component>
+					<id>statement_5ydVi46VbYB</id>
+					<description lang="und">2019 - Box - Group</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_65Fk7bjGS4i</id>
+					<description lang="und">2006 - answer - Group</description>
+				</component>
+				<component>
+					<id>choice_6H3pwxIev5y</id>
+					<description lang="und">2013 - answer 1 - Group</description>
+				</component>
+				<component>
+					<id>choice_6pjT8umRSQw</id>
+					<description lang="und">2019 - answer 1 - Group</description>
+				</component>
+			</target>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/6LqplgqID5P" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Progress toward gender and disability equality</name>
+			<description lang="und">Progress toward gender and disability equality</description>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/6LqplgqID5P/68EluXbF3rK" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+		</activity>
+		<activity id="http://5jP2tko60Oe_course_id/6jo3ta3oQfa" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Progress toward gender and disability equality</name>
+			<description lang="und">Progress toward gender and disability equality</description>
+		</activity>
+	</activities>
+</tincan>

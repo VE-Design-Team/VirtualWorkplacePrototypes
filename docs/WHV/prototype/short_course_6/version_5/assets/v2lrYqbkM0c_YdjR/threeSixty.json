@@ -1,0 +1,54 @@
+{
+  "version": "3.34.20804.0",
+  "scenes": [
+    {
+      "title": "Progress toward gender and disability equality"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6lzctvkxkJh",
+      "title": "Progress toward gender and disability equality",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6hfa9F1knuW",
+      "title": "Progress toward gender and disability equality",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "6D2xEG9htBC",
+      "title": "Progress toward gender and disability equality",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5nnxyBMoQi9",
+      "title": "Progress toward gender and disability equality",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "5tkSuDYDITc",
+      "title": "Progress toward gender and disability equality",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "6LqplgqID5P",
+      "title": "Progress toward gender and disability equality",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "6jo3ta3oQfa",
+      "title": "Progress toward gender and disability equality",
+      "scene_index": "1.7"
+    }
+  ],
+  "player": {
+    "name": "classic",
+    "width": 780,
+    "height": 770
+  },
+  "stage": {
+    "width": 760,
+    "height": 750
+  }
+}

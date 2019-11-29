@@ -273,7 +273,7 @@ h3 a {
     width: 320px;
     max-width: 100%; }
     #banner-splash #ws .whm-logo {
-      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
+      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
       height: 100%;
       width: 320px;
       max-width: 100%;
@@ -282,7 +282,7 @@ h3 a {
       background-repeat: no-repeat; }
 
 .whm-cc {
-  background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/cc.png");
+  background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/cc.png");
   width: 150px;
   height: 100px;
   max-width: 100%;
@@ -304,7 +304,7 @@ h3 a {
     float: left;
     width: 320px; }
     #banner #ws .whm-logo {
-      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
+      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
       height: 48px;
       margin: 12px;
       background-size: contain;
@@ -339,7 +339,7 @@ h3 a {
     float: left; }
     #breadcrumbs #ws .fssi-logo {
       margin: 0;
-      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
+      background: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/whm_logo.png");
       height: 48px;
       background-size: cover;
       background-repeat: no-repeat; }
@@ -390,9 +390,9 @@ h3 a {
       border: none;
       z-index: 400; }
     #breadcrumbs #access .btn-fs {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/svg/fullscreen.svg"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/svg/fullscreen.svg"); }
     #breadcrumbs #access .btn-menu {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/svg/hamburger.svg"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/svg/hamburger.svg"); }
 
 #ribbon {
   min-height: 100px;
@@ -495,7 +495,7 @@ h3 a {
       margin-bottom: 1rem; }
       #flipcards .card .middler button {
         background: none;
-        background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/flipme_icon.png");
+        background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/flipme_icon.png");
         background-size: contain;
         color: rgba(0, 0, 0, 0);
         background-position: center;
@@ -565,30 +565,30 @@ h3 a {
       #introtabs #tabs ul.nav li.nav-item a.nav-link.active {
         padding: 0; }
     #introtabs #tabs ul.nav li.nav-item:nth-child(1) a {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/learning_objectives_inverse.png");
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/learning_objectives_inverse.png");
       background-repeat: no-repeat;
       background-position: center; }
     #introtabs #tabs ul.nav li.nav-item:nth-child(1) a.active {
       background-color: #01A19A;
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/learning_objectives.png"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/learning_objectives.png"); }
     #introtabs #tabs ul.nav li.nav-item:nth-child(2) a {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/key_activities_inverse.png");
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/key_activities_inverse.png");
       background-repeat: no-repeat;
       background-position: center; }
       #introtabs #tabs ul.nav li.nav-item:nth-child(2) a .title {
         padding-top: 1.25rem; }
     #introtabs #tabs ul.nav li.nav-item:nth-child(2) a.active {
       background-color: #01A19A;
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/key_activities.png"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/key_activities.png"); }
     #introtabs #tabs ul.nav li.nav-item:nth-child(3) a {
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/assessments_inverse.png");
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/assessments_inverse.png");
       background-repeat: no-repeat;
       background-position: center; }
       #introtabs #tabs ul.nav li.nav-item:nth-child(3) a .title {
         padding-top: 1.25rem; }
     #introtabs #tabs ul.nav li.nav-item:nth-child(3) a.active {
       background-color: #01A19A;
-      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/whm/img/theme/assessments.png"); }
+      background-image: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/whm/img/theme/assessments.png"); }
   #introtabs #tabs .tab-content {
     border: none;
     padding: 0;
@@ -1176,6 +1176,199 @@ label {
   font-size: .9rem;
   padding: 20px;
   margin: 20px -20px -20px; }
+
+ol.organizational-chart,
+ol.organizational-chart ol,
+ol.organizational-chart li,
+ol.organizational-chart li > div {
+  position: relative; }
+
+ol.organizational-chart,
+ol.organizational-chart ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ol.organizational-chart {
+  text-align: center; }
+
+ol.organizational-chart ol {
+  padding-top: 1em; }
+
+ol.organizational-chart ol:before,
+ol.organizational-chart ol:after,
+ol.organizational-chart li:before,
+ol.organizational-chart li:after,
+ol.organizational-chart > li > div:before,
+ol.organizational-chart > li > div:after {
+  background-color: #b7a6aa;
+  content: '';
+  position: absolute; }
+
+ol.organizational-chart ol > li {
+  padding: 1em 0 0 1em; }
+
+ol.organizational-chart > li ol:before {
+  height: 1em;
+  left: 50%;
+  top: 0;
+  width: 3px; }
+
+ol.organizational-chart > li ol:after {
+  height: 3px;
+  left: 3px;
+  top: 1em;
+  width: 50%; }
+
+ol.organizational-chart > li ol > li:not(:last-of-type):before {
+  height: 3px;
+  left: 0;
+  top: 2em;
+  width: 1em; }
+
+ol.organizational-chart > li ol > li:not(:last-of-type):after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 3px; }
+
+ol.organizational-chart > li ol > li:last-of-type:before {
+  height: 3px;
+  left: 0;
+  top: 2em;
+  width: 1em; }
+
+ol.organizational-chart > li ol > li:last-of-type:after {
+  height: 2em;
+  left: 0;
+  top: 0;
+  width: 3px; }
+
+ol.organizational-chart li > div {
+  border-radius: 3px;
+  min-height: 2em;
+  padding: 0; }
+
+/*** PRIMARY ***/
+ol.organizational-chart > li > div {
+  margin-right: 1em; }
+
+ol.organizational-chart > li > div:before {
+  bottom: 2em;
+  height: 3px;
+  right: -1em;
+  width: 1em; }
+
+ol.organizational-chart > li > div:first-of-type:after {
+  bottom: 0;
+  height: 2em;
+  right: -1em;
+  width: 3px; }
+
+ol.organizational-chart > li > div + div {
+  margin-top: 1em; }
+
+ol.organizational-chart > li > div + div:after {
+  height: calc(100% + 1em);
+  right: -1em;
+  top: -1em;
+  width: 3px; }
+
+/*** SECONDARY ***/
+ol.organizational-chart > li > ol:before {
+  left: inherit;
+  right: 0; }
+
+ol.organizational-chart > li > ol:after {
+  left: 0;
+  width: 100%; }
+
+/*** MEDIA QUERIES ***/
+@media only screen and (min-width: 64em) {
+  ol.organizational-chart {
+    margin-left: -1em;
+    margin-right: -1em; }
+  /* PRIMARY */
+  ol.organizational-chart > li > div {
+    display: inline-block;
+    float: none;
+    margin: 0 1em 1em 1em;
+    vertical-align: bottom; }
+  ol.organizational-chart > li > div:only-of-type {
+    margin-bottom: 0;
+    width: calc((100% / 1) - 2em - 4px);
+    max-width: 250px; }
+  ol.organizational-chart > li > div:first-of-type:nth-last-of-type(2),
+  ol.organizational-chart > li > div:first-of-type:nth-last-of-type(2) ~ div {
+    width: calc((100% / 2) - 2em - 4px); }
+  ol.organizational-chart > li > div:first-of-type:nth-last-of-type(3),
+  ol.organizational-chart > li > div:first-of-type:nth-last-of-type(3) ~ div {
+    width: calc((100% / 3) - 2em - 4px); }
+  ol.organizational-chart > li > div:first-of-type:nth-last-of-type(4),
+  ol.organizational-chart > li > div:first-of-type:nth-last-of-type(4) ~ div {
+    width: calc((100% / 4) - 2em - 4px); }
+  ol.organizational-chart > li > div:first-of-type:nth-last-of-type(5),
+  ol.organizational-chart > li > div:first-of-type:nth-last-of-type(5) ~ div {
+    width: calc((100% / 5) - 2em - 4px); }
+  ol.organizational-chart > li > div:before,
+  ol.organizational-chart > li > div:after {
+    bottom: -1em !important;
+    top: inherit !important; }
+  ol.organizational-chart > li > div:before {
+    height: 1em !important;
+    left: 50% !important;
+    width: 3px !important; }
+  ol.organizational-chart > li > div:only-of-type:after {
+    display: none; }
+  ol.organizational-chart > li > div:first-of-type:not(:only-of-type):after,
+  ol.organizational-chart > li > div:last-of-type:not(:only-of-type):after {
+    bottom: -1em;
+    height: 3px;
+    width: calc(50% + 1em + 3px); }
+  ol.organizational-chart > li > div:first-of-type:not(:only-of-type):after {
+    left: calc(50% + 3px); }
+  ol.organizational-chart > li > div:last-of-type:not(:only-of-type):after {
+    left: calc(-1em - 3px); }
+  ol.organizational-chart > li > div + div:not(:last-of-type):after {
+    height: 3px;
+    left: -2em;
+    width: calc(100% + 4em); }
+  /* SECONDARY */
+  ol.organizational-chart > li > ol {
+    display: flex;
+    flex-wrap: nowrap; }
+  ol.organizational-chart > li > ol:before,
+  ol.organizational-chart > li > ol > li:before {
+    height: 1em !important;
+    left: 50% !important;
+    top: 0 !important;
+    width: 3px !important; }
+  ol.organizational-chart > li > ol:after {
+    display: none; }
+  ol.organizational-chart > li > ol > li {
+    flex-grow: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em; }
+  ol.organizational-chart > li > ol > li:only-of-type {
+    padding-top: 0; }
+  ol.organizational-chart > li > ol > li:only-of-type:before,
+  ol.organizational-chart > li > ol > li:only-of-type:after {
+    display: none; }
+  ol.organizational-chart > li > ol > li:first-of-type:not(:only-of-type):after,
+  ol.organizational-chart > li > ol > li:last-of-type:not(:only-of-type):after {
+    height: 3px;
+    top: 0;
+    width: 50%; }
+  ol.organizational-chart > li > ol > li:first-of-type:not(:only-of-type):after {
+    left: 50%; }
+  ol.organizational-chart > li > ol > li:last-of-type:not(:only-of-type):after {
+    left: 0; }
+  ol.organizational-chart > li > ol > li + li:not(:last-of-type):after {
+    height: 3px;
+    left: 0;
+    top: 0;
+    width: 100%; } }
 
 /*Cards*/
 .card-1 {
@@ -7201,8 +7394,8 @@ a.skip-link {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/fonts/fontawesome-webfont.eot#iefix&v=4.7.0") format("embedded-opentype"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/fonts/fontawesome-webfont.eot#iefix&v=4.7.0") format("embedded-opentype"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -10530,7 +10723,7 @@ abbr.glossarizer_replaced {
     padding-top: 10rem; }
 
 #sampledoc .tear {
-  background-image: url(https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v10/wp-content/themes/page-builder/css/img/tear.png);
+  background-image: url(https://ve-design-team.github.io/VirtualWorkplace/WHV/prototype/virtual_workplace/virtual_workplace_v11/wp-content/themes/page-builder/css/img/tear.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: auto 100%;

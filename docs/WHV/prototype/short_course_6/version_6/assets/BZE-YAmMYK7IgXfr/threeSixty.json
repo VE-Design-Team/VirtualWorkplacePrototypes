@@ -1,0 +1,24 @@
+{
+  "version": "3.34.20804.0",
+  "scenes": [
+    {
+      "title": "Medical vs social model"
+    }
+  ],
+  "slides": [
+    {
+      "id": "5w3rFr6SO2D",
+      "title": "Social Model of Disability",
+      "scene_index": "1.1"
+    }
+  ],
+  "player": {
+    "name": "classic",
+    "width": 740,
+    "height": 560
+  },
+  "stage": {
+    "width": 720,
+    "height": 540
+  }
+}

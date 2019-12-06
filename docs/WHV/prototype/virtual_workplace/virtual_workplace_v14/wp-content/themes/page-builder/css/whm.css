@@ -1176,7 +1176,16 @@ label {
   color: #372A57;
   font-size: .9rem;
   padding: 20px;
-  margin: 20px -20px -20px; }
+  margin: 20px -20px -20px;
+  border-bottom: 1px solid #01A19A !important; }
+
+.bio-staff {
+  background-color: #fff;
+  text-align: left;
+  color: #372A57;
+  font-size: .9rem;
+  padding: 20px;
+  border-bottom: 1px solid #000 !important; }
 
 ol.organizational-chart,
 ol.organizational-chart ol,

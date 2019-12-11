@@ -684,7 +684,7 @@ label {
     #menu-whm li ul li:last-child {
       padding-bottom: 1rem; }
     #menu-whm li ul a {
-      color: #01A19A !important;
+      color: #372A57 !important;
       font-weight: 400;
       font-size: 1.2rem;
       border-left: 2px solid #fff;
@@ -843,7 +843,7 @@ label {
     position: fixed;
     top: 1.5rem;
     right: 2rem;
-    z-index: 1000;
+    z-index: 9999999 !important;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -986,6 +986,7 @@ label {
   right: 21rem;
   text-align: center;
   background-color: #fff;
+  border: 0px solid #fff;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
@@ -1008,7 +1009,8 @@ label {
   border: 0.1em solid #fff;
   width: 1em;
   height: 1em;
-  position: absolute; }
+  position: absolute;
+  background-color: #01A19A; }
 
 .full-screen:before, .full-screen:after {
   content: '';

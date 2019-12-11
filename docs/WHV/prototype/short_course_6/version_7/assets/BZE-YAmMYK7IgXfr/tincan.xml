@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6qVwTdyYpID_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">Social Model of Disability</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6qVwTdyYpID_course_id/5w3rFr6SO2D" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Social Model of Disability</name>
+			<description lang="und">Social Model of Disability</description>
+		</activity>
+	</activities>
+</tincan>

@@ -66,12 +66,15 @@
 
   .quiz  .quiz-multiple-choice-option--correct .icon-tick {
 
-        display: none;
+        display: none !important;
     }
 
   .quiz  .quiz-match__item-feedback-bubble {
         display: none !important;}
 
+.quiz .quiz-match__item-feedback {
+  display: none !important;
+}
 
  .quiz .quiz-multiple-choice-option--correct .i-checkMark {
   display: none !important;

@@ -688,6 +688,9 @@ label {
     color: #fff !important;
     font-size: 1.5rem;
     text-decoration: none !important; }
+  #menu-whm li .current-menu-item a {
+    border-left: 2px solid #fff;
+    padding-left: .5rem; }
   #menu-whm li ul {
     padding-inline-start: 0px !important;
     background-color: #ffffff;
